@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-BR">
+<!-- Define o idioma da página como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Define o conjunto de caracteres como UTF-8, permitindo acentuação -->
+
+  <title>Cachorros para Adoção</title>
+  <!-- Define o título da aba do navegador -->
+
+  <style>
+    .container {
+      display: flex;
+      /* Ativa o flexbox */
+      flex-wrap: wrap;
+      /* Permite que os cards quebrem linha */
+      gap: 20px;
+      /* Espaço entre os cards */
+      justify-content: center;
+      /* Centraliza os cards na tela */
+    }
+
+    button {
+      display: block;
+      /* Transforma ele em um bloco para que funcieone o fieldset */
+      margin: 10px auto;
+      /* Centraliza o botão */
+      cursor: pointer;
+    }
+
+    fieldset {
+      width: 280px;
+      /* Define uma largura padrão para os cards */
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/images/header/logo.png" alt="Logo ACAPRA" />
+    </div>
+    <nav>
+      <a href="home.html">Missão</a>
+      <a href="adotar.html">Adotar</a>
+      <a href="adotados.html">Adotados</a>
+      <a href="como-ajudar.html">Ajude</a>
+      <a href="maus-tratos.html">Denunciar maus tratos</a>
+    </nav>
+    <div class="redes">
+      <a href="https://www.instagram.com/acaprabrusquesc/reels/"><img src="assets/images/header/instagram.png"
+          alt="Instagram" /></a>
+      <a
+        href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/"><img
+          src="assets/images/header/facebook.png" alt="Facebook" /></a>
+      <a href="https://wa.me/5547996736046"><img src="assets/images/header/whatsapp.png" alt="WhatsApp" /></a>
+      <p>Siga nossos passos pelas redes sociais!</p>
+    </div>
+  </header <!-- Início do conteúdo visível da página -->
+
+  <h1 style="text-align: center;">Cachorros para Adoção</h1>
+  <!-- Título principal da página -->
+
+  <p style="text-align: center;"><em>Eles também merecem muito amor e um lar carinhoso!</em></p>
+  <!-- Parágrafo com uma frase em itálico para chamar atenção e o texto-align centraliza -->
+
+  <hr>
+  <!-- Linha horizontal separando o título do conteúdo principal -->
+
+  <!-- Cada animal é representado com um fieldset (bloco com borda e legenda) -->
+
+  <div class="container">
+
+    <fieldset>
+      <!-- Cria uma borda ao redor das informações -->
+      <legend><strong>Glória e Cléo</strong></legend>
+      <!-- Título do fieldset com o nome do cachorro -->
+
+      <img src="assets/images/adocao/cachorros/gloria.png" alt="Glória e Cléo" width="280px">
+      <!-- Imagem dos cachorros Glória e Cléo, com largura de 280px -->
+
+      <p><strong>Idade:</strong> 10 e 7 anos</p>
+      <!-- Informação sobre a idade -->
+
+      <p><strong>Gênero:</strong> Fêmeas</p>
+      <!-- Informação sobre o gênero -->
+
+      <p><strong>Descrição:</strong> Glória (mãe) e Cléo (filha), foram encontradas abandonadas na BR. São muito dóceis,
+        amáveis e ativas, apesar da idade mais adulta, não apresentam problemas de saúde e são muito brincalhonas.
+        Precisam de um lar com muito amor, carinho e espaço, pois são duas cachorras grandes.</p>
+      <!-- Descrição detalhada do temperamento do animal -->
+
+      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
+      <!-- Botão para ação-->
+    </fieldset>
+
+    <br>
+    <!-- Espaço em branco entre os cards -->
+
+    <!-- Repetição da estrutura para os demais cães -->
+
+    <fieldset>
+      <legend><strong>Branca</strong></legend>
+      <img src="assets/images/adocao/cachorros/branca.png" alt="Branca" width="280">
+      <p><strong>Idade:</strong> 2 anos</p>
+      <p><strong>Gênero:</strong> Fêmea</p>
+      <p><strong>Descrição:</strong> Branca foi retirada de maus tratos, era usada de forma indevida para caça. É muito
+        dócil, querida e brincalhona, mas apresenta um grau de medo. Precisa de um lar com muito amor, carinho e
+        paciência.</p>
+      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend><strong>Luma</strong></legend>
+      <img src="assets/images/adocao/cachorros/luma.png" alt="Luma" width="280">
+      <p><strong>Idade:</strong> 3 anos</p>
+      <p><strong>Gênero:</strong> Fêmea</p>
+      <p><strong>Descrição:</strong> Luma vivia nas ruas com seu irmão Juca. Ele foi adotado, mas ela ainda segue
+        esperando seu tão sonhado lar. Luma é puro amor e calmaria! Precisa de um lar com muito amor e carinho.</p>
+      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend><strong>Maia</strong></legend>
+      <img src="assets/images/adocao/cachorros/maia.png" alt="Maia" width="280">
+      <p><strong>Idade:</strong> 1 ano</p>
+      <p><strong>Gênero:</strong> Fêmea</p>
+      <p><strong>Descrição:</strong> Maia foi encontrada junto com sua irmã, Mavie, abandonada em Brusque. Foram
+        resgatadas e agora Maia precisa de um lar com muito espaço, amor e carinho.</p>
+      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend><strong>Mavie</strong></legend>
+      <img src="assets/images/adocao/cachorros/mavie.png" alt="Mavie" width="280">
+      <p><strong>Idade:</strong> 1 ano</p>
+      <p><strong>Gênero:</strong> Fêmea</p>
+      <p><strong>Descrição:</strong> Mavie foi encontrada junto com sua irmã, Maia, abandonada em Brusque. Assim como
+        sua irmã, ela é super carinhosa e protetora!</p>
+      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
+    </fieldset>
+
+  </div>
+
+</body>
+
+</html>
