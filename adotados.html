@@ -7,7 +7,7 @@
   <meta charset="UTF-8">
   <!-- Define o conjunto de caracteres como UTF-8, permitindo acentuação -->
 
-  <title>Cachorros para Adoção</title>
+  <title>Cachorros Adotados</title>
   <!-- Define o título da aba do navegador -->
 
   <style>
@@ -33,6 +33,31 @@
     fieldset {
       width: 280px;
       /* Define uma largura padrão para os cards */
+    }
+
+    .animal {
+      color: #3498db;
+      cursor: pointer;
+      position: relative;
+      font-weight: bold;
+    }
+
+    .animal:hover::after {
+      content: attr(data-tip);
+      position: absolute;
+      bottom: 130%;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: white;
+      padding: 8px;
+      border-radius: 6px;
+      width: 220px;
+      font-size: 13px;
+      text-align: left;
+      white-space: normal;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 10;
     }
   </style>
 
@@ -62,10 +87,10 @@
   </header>
   <!-- Início do conteúdo visível da página -->
 
-  <h1 style="text-align: center;">Cachorros para Adoção</h1>
+  <h1 style="text-align: center;">Cachorros Adotados</h1>
   <!-- Título principal da página -->
 
-  <p style="text-align: center;"><em>Eles também merecem muito amor e um lar carinhoso!</em></p>
+  <p style="text-align: center;"><em>E suas histórias de superação</em></p>
   <!-- Parágrafo com uma frase em itálico para chamar atenção e o texto-align centraliza -->
 
   <hr>
@@ -86,11 +111,12 @@
       <p><strong>Gênero:</strong> Fêmea</p>
       <!-- Informação sobre o gênero -->
 
-      <p><strong>História:</strong>Amora foi resgatada após sobreviver a um atropelamento e vencer a cinomose. Chegou
+      <p><strong>História:</strong> Sobreviveu a atropelamento<span class="animal" data-tip="Amora foi resgatada após sobreviver a um
+        atropelamento e vencer a cinomose. Chegou
         assustada, com marcas de um passado difícil, mas mostrou uma força incrível. Com cuidados e muito amor, superou
         o medo e aprendeu a confiar novamente. Hoje, adotada por uma família amorosa, Amora vive feliz, brincando e se
         sentindo segura. Sua história é um exemplo de resiliência e esperança, mostrando que todo animal merece uma
-        segunda chance.</p>
+        segunda chance.">[...]</span></p>
       <!-- Descrição detalhada do temperamento do animal -->
 
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
@@ -106,10 +132,10 @@
       <legend><strong>Oliver</strong></legend>
       <img src="assets/images/adotados/oliver.png" alt="Oliver" width="280">
       <p><strong>Gênero:</strong> Macho</p>
-      <p><strong>História:</strong> Oliver, o cachorro que foi resgatado após ser brutalmente agredido pelo tutor,
+      <p><strong>História:</strong> Agredido pelo tutor<span class="animal" data-tip="Oliver, o cachorro que foi resgatado após ser brutalmente agredido pelo tutor,
         sofrendo uma grave miíase na cabeça, encontrou um final feliz. Graças ao resgate e aos cuidados dedicados, ele
         se recuperou e foi adotado por uma família amorosa. Hoje, Oliver está bem, vivendo uma vida cheia de carinho e
-        segurança.</p>
+        segurança.">[...]</span></p>
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
     </fieldset>
 
@@ -119,11 +145,12 @@
       <legend><strong>Luna</strong></legend>
       <img src="assets/images/adotados/luna.png" alt="Luna" width="280">
       <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>História:</strong> Luna era apenas uma filhote quando conheceu a dor do abandono. Chegou até nós
+      <p><strong>História:</strong> Abandonada pelo dono<span class="animal" data-tip="Luna era apenas uma filhote quando conheceu a dor do abandono. Chegou até nós
         assustada e vulnerável, mas com um coração cheio de esperança. Dócil e tranquila, ela conquistou a todos com seu
         jeitinho carinhoso e sua vontade de viver. Não sabíamos ao certo como ela se adaptaria a outros animais, mas uma
         coisa era clara: Luna merecia uma família que a amasse e a protegesse. E foi exatamente isso que aconteceu!
-        Hoje, Luna está em um lar cheio de amor, onde recebe todo o carinho e cuidado que sempre mereceu.</p>
+        Hoje, Luna está em um lar cheio de amor, onde recebe todo o carinho e cuidado que sempre mereceu.">[...]</span>
+      </p>
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
     </fieldset>
 
@@ -133,13 +160,13 @@
       <legend><strong>Pitchuca</strong></legend>
       <img src="assets/images/adotados/pitchuca.png" alt="Pitchuca" width="280">
       <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>História:</strong> Recebemos um pedido de ajuda urgente e nos deslocamos imediatamente para o local.
+      <p><strong>História:</strong> Um pedido urgente<span class="animal" data-tip="Recebemos um pedido de ajuda urgente e nos deslocamos imediatamente para o local.
         Quando desci do carro, pensei que estávamos indo apenas para buscar o corpinho dela. O diagnóstico era incerto,
         ela não tinha forças para se maner em pé e seu olhar, repleto de medo, refletia tudo o que deve ter enfrentado.
         Porém ela tinha uma força interior muito maior do que imaginávamos, e continuou lutando com bravura. Chegamos a
         cogitar desistir, mas ela nos ensinou que, diante de qualquer obstáculo, é necessário ter coragem e
         perseverança. Hoje, recuperada e feliz, ela encontrou seu lar definitivo, e sua história se tornou um símbolo de
-        superação e esperança.</p>
+        superação e esperança.">[...]</span></p>
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
     </fieldset>
 
@@ -150,11 +177,12 @@
       <img src="assets/images/adotados/branca.png" alt="Branca" width="280">
       <!-- Imagem não definida (src vazio), mas com largura e texto alternativo -->
       <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>História:</strong> Resgatamos Branca, uma cachorra em situação crítica, de um morador de rua que a
+      <p><strong>História:</strong> Em situação crítica<span class="animal" data-tip="Resgatamos Branca, uma cachorra em situação crítica, de um morador de rua que a
         explorava para criar filhotes e vendê-los. Ela estava com sangramento e secreção verde, sintomas de piometra,
-        uma infecção grave no útero. Apesar de resistência do "tutor", que não queria castrá-la para continuar lucrando,
-        a ONG, com apoio da polícia e Bem Estar Animal, conseguiu levá-la ao veterinário. Branca foi castrada a tempo e
-        está se recuperando. O caso gerou julgamentos, mas a intervenção salvou sua vida.</p>
+        uma infecção grave no útero. Apesar de resistência do " tutor", que não queria castrá-la para continuar
+          lucrando, a ONG, com apoio da polícia e Bem Estar Animal, conseguiu levá-la ao veterinário. Branca foi
+          castrada a tempo e está se recuperando. O caso gerou julgamentos, mas a intervenção salvou sua
+          vida.">[...]</span></p>
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
     </fieldset>
 
@@ -164,13 +192,13 @@
       <legend><strong>Sandy e Junior</strong></legend>
       <img src="assets/images/adotados/shady-e-junior.png" alt="Sandy-e-Junior" width="280">
       <p><strong>Gênero:</strong> Fêmea e Macho</p>
-      <p><strong>História:</strong> Sandy e Junior, os gêmeos, chegaram até nós de uma maneira inesperada. Uma mulher
+      <p><strong>História:</strong> Severamente anêmicos<span class="animal" data-tip="Sandy e Junior, os gêmeos, chegaram até nós de uma maneira inesperada. Uma mulher
         enviou um vídeo pelo WhatsApp, mostrando os dois cães adultos abandonados no mato, em frente à sua casa. As
         crianças os pegaram e, logo depois, eles foram levados para o veterinário, onde foram testados e vacinados. No
         início, eles estavam estranhamente quietos e sem ânimo. Preocupados, descobrimos que Sandy estava com anemia
         severa e precisou ser internada para tratamento. Pouco depois, Junior também precisou de cuidados. Mas, com
         muito amor e dedicação, os dois se recuperaram e hoje estão 100% saudáveis! Agora, eles têm um final feliz:
-        Foram adotados juntos por uma família que lhes da todo o carinho e conforto que merecem.</p>
+        Foram adotados juntos por uma família que lhes da todo o carinho e conforto que merecem.">[...]</span></p>
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
     </fieldset>
 

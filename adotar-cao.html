@@ -1,55 +1,111 @@
 <!DOCTYPE html>
-<!-- Define o tipo de documento como HTML5 -->
+<!-- Declara o tipo de documento HTML5, necessário para que o navegador interprete o conteúdo corretamente -->
 <html lang="pt-BR">
-<!-- Define o idioma da página como português do Brasil -->
+<!-- Define o idioma principal da página como português do Brasil -->
 
 <head>
   <meta charset="UTF-8">
-  <!-- Define o conjunto de caracteres como UTF-8, permitindo acentuação -->
-
+  <!-- Define a codificação de caracteres como UTF-8, permitindo acentuação e caracteres especiais -->
   <title>Cachorros para Adoção</title>
-  <!-- Define o título da aba do navegador -->
-
+  <!-- Título da aba do navegador -->
+  <!-- Estilos CSS definidos diretamente no HTML -->
   <style>
+    /* Container flexível onde os cards dos cães serão organizados */
     .container {
       display: flex;
-      /* Ativa o flexbox */
+      /* Ativa o layout flexível em linha horizontal */
       flex-wrap: wrap;
-      /* Permite que os cards quebrem linha */
+      /* Permite quebra automática de linha se os itens excederem a largura */
       gap: 20px;
-      /* Espaço entre os cards */
+      /* Define o espaço entre os cards */
       justify-content: center;
-      /* Centraliza os cards na tela */
+      /* Centraliza todos os elementos dentro do container na horizontal */
     }
 
+    /* Estilização padrão para todos os botões */
     button {
       display: block;
-      /* Transforma ele em um bloco para que funcieone o fieldset */
+      /* Exibe como bloco para controle total de espaçamento */
       margin: 10px auto;
-      /* Centraliza o botão */
+      /* Centraliza horizontalmente e adiciona espaço acima e abaixo */
       cursor: pointer;
+      /* Indica que o botão é clicável (mãozinha ao passar o mouse) */
     }
 
+    /* Define a largura dos cards (fieldset) */
     fieldset {
       width: 280px;
-      /* Define uma largura padrão para os cards */
+      /* Correspondente à largura das imagens */
+    }
+
+    /* Estilo para todas as palavras interativas com tooltip */
+    .animal {
+      color: #3498db;
+      /* Azul para indicar que é interativo */
+      cursor: pointer;
+      /* Muda para cursor de ponteiro ao passar o mouse */
+      position: relative;
+      /* Permite posicionar o pseudo-elemento ::after em relação a este elemento */
+      font-weight: bold;
+      /* Deixa o texto em negrito */
+    }
+
+    /* ============================ */
+    /* TOOLTIP: Geração dinâmica do conteúdo com ::after */
+    /* Este seletor ativa o tooltip quando o usuário passa o mouse sobre o span */
+    .animal:hover::after {
+      content: attr(data-tip);
+      /* Usa o valor do atributo HTML 'data-tip' como texto do tooltip (dinâmico e separado do conteúdo visível) */
+      position: absolute;
+      /* Permite posicionar sobre outros elementos (necessário para o balão flutuante) */
+      bottom: 130%;
+      /* Posiciona o tooltip acima do texto alvo com 130% da altura */
+      left: 50%;
+      /* Centraliza o balão horizontalmente */
+      transform: translateX(-50%);
+      /* Corrige o alinhamento para que o meio do balão fique no meio do texto */
+      background: #333;
+      /* Fundo escuro para alto contraste */
+      color: white;
+      /* Texto branco para legibilidade */
+      padding: 8px;
+      /* Espaço interno do balão */
+      border-radius: 6px;
+      /* Bordas arredondadas (formato de balão amigável) */
+      width: 220px;
+      /* Largura padronizada para todos os tooltips */
+      font-size: 13px;
+      /* Tamanho de texto pequeno */
+      text-align: left;
+      /* Alinha o texto à esquerda */
+      white-space: normal;
+      /* Permite quebra de linha automática dentro do tooltip */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      /* Adiciona uma sombra suave abaixo do tooltip */
+      z-index: 10;
+      /* Garante que o balão fique acima de outros elementos */
     }
   </style>
-
 </head>
 
 <body>
+  <!-- Cabeçalho principal da página -->
   <header>
+    <!-- Logotipo institucional -->
     <div class="logo">
       <img src="assets/images/header/logo.png" alt="Logo ACAPRA" />
+      <!-- Atributo alt fornece descrição para leitores de tela e carregamento alternativo -->
     </div>
+    <!-- Menu de navegação principal do site -->
     <nav>
+      <!-- Cada link leva para uma seção específica -->
       <a href="home.html">Missão</a>
       <a href="adotar.html">Adotar</a>
       <a href="adotados.html">Adotados</a>
       <a href="como-ajudar.html">Ajude</a>
       <a href="maus-tratos.html">Denunciar maus tratos</a>
     </nav>
+    <!-- Links de redes sociais com ícones -->
     <div class="redes">
       <a href="https://www.instagram.com/acaprabrusquesc/reels/"><img src="assets/images/header/instagram.png"
           alt="Instagram" /></a>
@@ -59,98 +115,71 @@
       <a href="https://wa.me/5547996736046"><img src="assets/images/header/whatsapp.png" alt="WhatsApp" /></a>
       <p>Siga nossos passos pelas redes sociais!</p>
     </div>
-  </header <!-- Início do conteúdo visível da página -->
-
+  </header>
+  <!-- Título principal da página com mensagem motivacional -->
   <h1 style="text-align: center;">Cachorros para Adoção</h1>
-  <!-- Título principal da página -->
-
   <p style="text-align: center;"><em>Eles também merecem muito amor e um lar carinhoso!</em></p>
-  <!-- Parágrafo com uma frase em itálico para chamar atenção e o texto-align centraliza -->
-
   <hr>
-  <!-- Linha horizontal separando o título do conteúdo principal -->
-
-  <!-- Cada animal é representado com um fieldset (bloco com borda e legenda) -->
-
+  <!-- Container geral dos cards de animais disponíveis -->
   <div class="container">
-
+    <!-- Cada fieldset representa um card individual ou duplo -->
     <fieldset>
-      <!-- Cria uma borda ao redor das informações -->
       <legend><strong>Glória e Cléo</strong></legend>
-      <!-- Título do fieldset com o nome do cachorro -->
-
       <img src="assets/images/adocao/cachorros/gloria.png" alt="Glória e Cléo" width="280px">
-      <!-- Imagem dos cachorros Glória e Cléo, com largura de 280px -->
-
       <p><strong>Idade:</strong> 10 e 7 anos</p>
-      <!-- Informação sobre a idade -->
-
       <p><strong>Gênero:</strong> Fêmeas</p>
-      <!-- Informação sobre o gênero -->
-
-      <p><strong>Descrição:</strong> Glória (mãe) e Cléo (filha), foram encontradas abandonadas na BR. São muito dóceis,
-        amáveis e ativas, apesar da idade mais adulta, não apresentam problemas de saúde e são muito brincalhonas.
-        Precisam de um lar com muito amor, carinho e espaço, pois são duas cachorras grandes.</p>
-      <!-- Descrição detalhada do temperamento do animal -->
-
+      <p><strong>Descrição:</strong> São dóceis, ativas
+        <!-- Texto que ativa o tooltip ao passar o mouse -->
+        <span class="animal"
+          data-tip="Glória (mãe) e Cléo (filha) foram encontradas abandonadas na BR. São dóceis, amáveis e ativas, sem problemas de saúde. Precisam de um lar com muito amor, carinho e espaço.">[...]</span>
+      </p>
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
-      <!-- Botão para ação-->
     </fieldset>
-
-    <br>
-    <!-- Espaço em branco entre os cards -->
-
-    <!-- Repetição da estrutura para os demais cães -->
-
     <fieldset>
       <legend><strong>Branca</strong></legend>
       <img src="assets/images/adocao/cachorros/branca.png" alt="Branca" width="280">
       <p><strong>Idade:</strong> 2 anos</p>
       <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>Descrição:</strong> Branca foi retirada de maus tratos, era usada de forma indevida para caça. É muito
-        dócil, querida e brincalhona, mas apresenta um grau de medo. Precisa de um lar com muito amor, carinho e
-        paciência.</p>
+      <p><strong>Descrição:</strong> Muito dócil e brincalhona
+        <span class="animal"
+          data-tip="Branca foi retirada de maus tratos, era usada de forma indevida para caça. É muito dócil, querida e brincalhona, mas apresenta um grau de medo. Precisa de um lar com muito amor, carinho e paciência.">[...]</span>
+      </p>
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
     </fieldset>
-
-    <br>
-
     <fieldset>
       <legend><strong>Luma</strong></legend>
       <img src="assets/images/adocao/cachorros/luma.png" alt="Luma" width="280">
       <p><strong>Idade:</strong> 3 anos</p>
       <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>Descrição:</strong> Luma vivia nas ruas com seu irmão Juca. Ele foi adotado, mas ela ainda segue
-        esperando seu tão sonhado lar. Luma é puro amor e calmaria! Precisa de um lar com muito amor e carinho.</p>
+      <p><strong>Descrição:</strong> Amorosa e tranquila
+        <span class="animal"
+          data-tip="Luma vivia nas ruas com seu irmão Juca. Ele foi adotado, mas ela ainda segue esperando seu tão sonhado lar. Luma é puro amor e calmaria! Precisa de um lar com muito amor e carinho.">[...]</span>
+      </p>
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
     </fieldset>
-
-    <br>
-
     <fieldset>
       <legend><strong>Maia</strong></legend>
       <img src="assets/images/adocao/cachorros/maia.png" alt="Maia" width="280">
       <p><strong>Idade:</strong> 1 ano</p>
       <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>Descrição:</strong> Maia foi encontrada junto com sua irmã, Mavie, abandonada em Brusque. Foram
-        resgatadas e agora Maia precisa de um lar com muito espaço, amor e carinho.</p>
+      <p><strong>Descrição:</strong> Carente de amor
+        <span class="animal"
+          data-tip="Maia foi encontrada junto com sua irmã, Mavie, abandonada em Brusque. Foram resgatadas e agora Maia precisa de um lar com muito espaço, amor e carinho.">[...]</span>
+      </p>
       <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
     </fieldset>
-
-    <br>
-
     <fieldset>
       <legend><strong>Mavie</strong></legend>
       <img src="assets/images/adocao/cachorros/mavie.png" alt="Mavie" width="280">
       <p><strong>Idade:</strong> 1 ano</p>
       <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>Descrição:</strong> Mavie foi encontrada junto com sua irmã, Maia, abandonada em Brusque. Assim como
-        sua irmã, ela é super carinhosa e protetora!</p>
-      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
+      <p><strong>Descrição:</strong> Carinhosa e protetora
+        <span class="animal"
+          data-tip="Mavie foi encontrada junto com sua irmã, Maia, abandonada em Brusque. Assim como sua irmã, ela é super carinhosa e protetora!">[...]</span>
+      </p>
+      <button onclick=location.href="https://forms.gle/bQYFtEDo2iwMqyR57">Adotar</button>
     </fieldset>
-
   </div>
-
 </body>
 
 </html>

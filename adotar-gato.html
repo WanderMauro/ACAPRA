@@ -34,6 +34,31 @@
             width: 280px;
             /* Define uma largura padrão para os cards */
         }
+
+        .animal {
+            color: #3498db;
+            cursor: pointer;
+            position: relative;
+            font-weight: bold;
+        }
+
+        .animal:hover::after {
+            content: attr(data-tip);
+            position: absolute;
+            bottom: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #333;
+            color: white;
+            padding: 8px;
+            border-radius: 6px;
+            width: 220px;
+            font-size: 13px;
+            text-align: left;
+            white-space: normal;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 10;
+        }
     </style>
 
 </head>
@@ -89,9 +114,9 @@
             <p><strong>Gênero:</strong> Macho</p>
             <!-- Informação sobre o gênero -->
 
-            <p><strong>Descrição:</strong> Bartô foi resgatado junto com seus 4 irmãos e sua mamãe Angel. Estavam em
+            <p><strong>Descrição:</strong> Com muito amor e energia<span class="animal" data-tip="Bartô foi resgatado junto com seus 4 irmãos e sua mamãe Angel. Estavam em
                 situação de rua, e viviam em uma casa improvisada de plástico. Bartô foi o único que sobrou dos seus
-                irmãos. É um filhote com muito amor e energia!</p>
+                irmãos. É um filhote com muito amor e energia!">[...]</span></p>
             <!-- Descrição detalhada do temperamento do animal -->
 
             <button onclick="location.href='https://forms.gle/xTgGbvtz3wD5rUPv6'">Adotar</button>
@@ -108,9 +133,11 @@
             <img src="assets/images/adocao/gatos/difusor.png" alt="Difusor" width="280">
             <p><strong>Idade:</strong> 6 meses</p>
             <p><strong>Gênero:</strong> Macho</p>
-            <p><strong>Descrição:</strong> Difusor é um gatinho macho, que foi encontrado em uma fábrica de peças
+            <p><strong>Descrição:</strong> Saudadável, cheio de amor
+                <span class="animal" data-tip="Difusor é um gatinho macho, que foi encontrado em uma fábrica de peças
                 automotivas (por isso o nome), chegou em estado caquético, com extrema magreza. Aos poucos foi se
-                recuperando e hoje é um jovem 100% saudável e cheio de amor!</p>
+                recuperando e hoje é um jovem 100% saudável e cheio de amor!">[...]</span>
+            </p>
             <button onclick="location.href='https://forms.gle/xTgGbvtz3wD5rUPv6'">Adotar</button>
         </fieldset>
 
@@ -121,9 +148,9 @@
             <img src="assets/images/adocao/gatos/luzia.png" alt="Luzia" width="280">
             <p><strong>Idade:</strong> 2 anos</p>
             <p><strong>Gênero:</strong> Fêmea</p>
-            <p><strong>Descrição:</strong> Luzia chegou até nós através de um pedido de ajuda, onde a pessoa que pediu
-                ajuda relatava que tinha um "monstro" em sua casa. Quando fomos resgatar, descobrimos que esse
-                "monstro", na verdade é uma linda princesa assustada e muito carinhosa!</p>
+            <p><strong>Descrição:</strong> Linda e carinhosa <span class="animal" data-tip="Luzia chegou até nós através de um pedido de ajuda, onde a pessoa que pediu
+                ajuda relatava que tinha um 'monstro' em sua casa. Quando fomos resgatar, descobrimos que esse
+                'monstro', na verdade é uma linda princesa assustada e muito carinhosa!">[...]</span></p>
             <button onclick="location.href='https://forms.gle/xTgGbvtz3wD5rUPv6'">Adotar</button>
         </fieldset>
 
@@ -134,8 +161,8 @@
             <img src="assets/images/adocao/gatos/mimi.png" alt="Mimi" width="280">
             <p><strong>Idade:</strong> 1 ano</p>
             <p><strong>Gênero:</strong> Fêmea</p>
-            <p><strong>Descrição:</strong> Mimi foi abandonada em uma residência, viveu um tempo na rua até ser
-                resgatada. É uma gatinha muito amorosa e carente!</p>
+            <p><strong>Descrição:</strong> Amorosa e carente<span class="animal" data-tip="Mimi foi abandonada em uma residência, viveu um tempo na rua até ser
+                resgatada. É uma gatinha muito amorosa e carente!">[...]</span></p>
             <button onclick="location.href='https://forms.gle/xTgGbvtz3wD5rUPv6'">Adotar</button>
         </fieldset>
 
