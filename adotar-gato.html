@@ -1,135 +1,86 @@
 <!DOCTYPE html>
-<!-- Define o tipo de documento como HTML5 -->
 <html lang="pt-BR">
-<!-- Define o idioma da página como português do Brasil -->
+ 
 
 <head>
     <meta charset="UTF-8">
-    <!-- Define o conjunto de caracteres como UTF-8, permitindo acentuação -->
+    
 
     <title>Cachorros para Adoção</title>
-    <!-- Define o título da aba do navegador -->
+    
 
-    <style>
-        .container {
-            display: flex;
-            /* Ativa o flexbox */
-            flex-wrap: wrap;
-            /* Permite que os cards quebrem linha */
-            gap: 20px;
-            /* Espaço entre os cards */
-            justify-content: center;
-            /* Centraliza os cards na tela */
-        }
-
-        button {
-            display: block;
-            /* Transforma ele em um bloco para que funcieone o fieldset */
-            margin: 10px auto;
-            /* Centraliza o botão */
-            cursor: pointer;
-        }
-
-        fieldset {
-            width: 280px;
-            /* Define uma largura padrão para os cards */
-        }
-
-        .animal {
-            color: #3498db;
-            cursor: pointer;
-            position: relative;
-            font-weight: bold;
-        }
-
-        .animal:hover::after {
-            content: attr(data-tip);
-            position: absolute;
-            bottom: 130%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #333;
-            color: white;
-            padding: 8px;
-            border-radius: 6px;
-            width: 220px;
-            font-size: 13px;
-            text-align: left;
-            white-space: normal;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-            z-index: 10;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="assets/images/header/logo.png" alt="Logo ACAPRA" />
-        </div>
-        <nav>
-            <a href="index.html">Missão</a>
-            <a href="adotar.html">Adotar</a>
-            <a href="adotados.html">Adotados</a>
-            <a href="como-ajudar.html">Ajude</a>
-            <a href="maus-tratos.html">Denunciar maus tratos</a>
-        </nav>
-        <div class="redes">
-            <a href="https://www.instagram.com/acaprabrusquesc/reels/"><img src="assets/images/header/instagram.png"
-                    alt="Instagram" /></a>
-            <a
-                href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/"><img
-                    src="assets/images/header/facebook.png" alt="Facebook" /></a>
-            <a href="https://wa.me/5547996736046"><img src="assets/images/header/whatsapp.png" alt="WhatsApp" /></a>
-            <p>Siga nossos passos pelas redes sociais!</p>
+        <div class="inner">
+            <div class="logo">
+                <img src="assets/images/header/logo.png" alt="Logo ACAPRA" />
+            </div>
+            <nav>
+                <a href="index.html">Missão</a>
+                <a href="adotar.html">Adotar</a>
+                <a href="adotados.html">Adotados</a>
+                <a href="como-ajudar.html">Ajude</a>
+                <a href="maus-tratos.html">Denunciar maus tratos</a>
+            </nav>
+            <div class="redes">
+                <a href="https://www.instagram.com/acaprabrusquesc/reels/"><img src="assets/images/header/instagram.png"
+                        alt="Instagram" /></a>
+                <a
+                    href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/"><img
+                        src="assets/images/header/facebook.png" alt="Facebook" /></a>
+                <a href="https://wa.me/5547996736046"><img src="assets/images/header/whatsapp.png" alt="WhatsApp" /></a>
+                <p>Siga nossos passos pelas redes sociais!</p>
+            </div>
         </div>
     </header>
-    <!-- Início do conteúdo visível da página -->
+    
 
-    <h1 style="text-align: center;">Gatos para Adoção</h1>
-    <!-- Título principal da página -->
+    <h1 class="center">Gatos para Adoção</h1>
+    
 
-    <p style="text-align: center;"><em>Eles também merecem muito amor e um lar carinhoso!</em></p>
-    <!-- Parágrafo com uma frase em itálico para chamar atenção e o texto-align centraliza -->
+    <p class="center"><em>Eles também merecem muito amor e um lar carinhoso!</em></p>
+    
 
     <hr>
-    <!-- Linha horizontal separando o título do conteúdo principal -->
+    
 
-    <!-- Cada animal é representado com um fieldset (bloco com borda e legenda) -->
+    
 
     <div class="container">
 
         <fieldset>
-            <!-- Cria uma borda ao redor das informações -->
-            <legend><strong>Bartô</strong></legend>
-            <!-- Título do fieldset com o nome do gato -->
+            <strong>Bartô</strong>
+            
 
             <img src="assets/images/adocao/gatos/barto.png" alt="Bartô" width="280px">
-            <!-- Imagem do cachorro Bartô, com largura de 280px -->
+            
 
             <p><strong>Idade:</strong> 3 meses</p>
-            <!-- Informação sobre a idade -->
+            
 
             <p><strong>Gênero:</strong> Macho</p>
-            <!-- Informação sobre o gênero -->
+            
 
             <p><strong>Descrição:</strong> Com muito amor e energia<span class="animal" data-tip="Bartô foi resgatado junto com seus 4 irmãos e sua mamãe Angel. Estavam em
                 situação de rua, e viviam em uma casa improvisada de plástico. Bartô foi o único que sobrou dos seus
                 irmãos. É um filhote com muito amor e energia!">[...]</span></p>
-            <!-- Descrição detalhada do temperamento do animal -->
+            
 
             <button onclick="location.href='https://forms.gle/xTgGbvtz3wD5rUPv6'">Adotar</button>
-            <!-- Botão para ação (sem funcionalidade por enquanto) -->
+            
         </fieldset>
 
         <br>
-        <!-- Espaço em branco entre os cards -->
+        
 
-        <!-- Repetição da estrutura para os demais cães -->
+        
 
         <fieldset>
-            <legend><strong>Difusor</strong></legend>
+            <strong>Difusor</strong>
             <img src="assets/images/adocao/gatos/difusor.png" alt="Difusor" width="280">
             <p><strong>Idade:</strong> 6 meses</p>
             <p><strong>Gênero:</strong> Macho</p>
@@ -144,7 +95,7 @@
         <br>
 
         <fieldset>
-            <legend><strong>Luzia</strong></legend>
+            <strong>Luzia</strong>
             <img src="assets/images/adocao/gatos/luzia.png" alt="Luzia" width="280">
             <p><strong>Idade:</strong> 2 anos</p>
             <p><strong>Gênero:</strong> Fêmea</p>
@@ -157,7 +108,7 @@
         <br>
 
         <fieldset>
-            <legend><strong>Mimi</strong></legend>
+            <strong>Mimi</strong>
             <img src="assets/images/adocao/gatos/mimi.png" alt="Mimi" width="280">
             <p><strong>Idade:</strong> 1 ano</p>
             <p><strong>Gênero:</strong> Fêmea</p>
