@@ -43,7 +43,6 @@
       </ul>
     </li>
     <li><a href="#uso">Uso</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contribuindo">Contribuindo</a></li>
     <li><a href="#licenca">Licença</a></li>
     <li><a href="#contato">Contato</a></li>
@@ -111,20 +110,6 @@ Estas instruções ajudam você a rodar o projeto localmente para desenvolviment
 
 - Navegue pelo menu superior para conhecer a missão, ver pets disponíveis, conferir adoções concluídas, saber como ajudar e como denunciar maus-tratos.
 - As imagens em `assets/images/` são utilizadas nas seções de destaque e galerias.
-
-<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] Tornar todo o site responsivo para telas pequenas
-- [ ] Melhorar acessibilidade (labels, contraste, navegação por teclado)
-- [ ] Otimizar imagens (tamanhos e formatos)
-- [ ] Adicionar SEO básico (metatags por página)
-- [ ] Centralizar informações de contato e redes sociais
-
-Veja também as <a href="issues">issues abertas</a> para melhorias e correções.
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
