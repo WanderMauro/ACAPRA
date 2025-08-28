@@ -43,7 +43,6 @@
       </ul>
     </li>
     <li><a href="#uso">Uso</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contribuindo">Contribuindo</a></li>
     <li><a href="#licenca">Licença</a></li>
     <li><a href="#contato">Contato</a></li>
@@ -109,20 +108,6 @@ Estas instruções ajudam você a rodar o projeto localmente para desenvolviment
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
 
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [ ] Tornar todo o site responsivo para telas pequenas
-- [ ] Melhorar acessibilidade (labels, contraste, navegação por teclado)
-- [ ] Otimizar imagens (tamanhos e formatos)
-- [ ] Adicionar SEO básico (metatags por página)
-- [ ] Centralizar informações de contato e redes sociais
-
-Veja também as <a href="issues">issues abertas</a> para melhorias e correções.
-
-<p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
-
 <!-- CONTRIBUTING -->
 
 ## Contribuindo
@@ -166,3 +151,4 @@ Projeto online: `https://acapra-projeto-v1.netlify.app/`
 - Comunidade open source
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
