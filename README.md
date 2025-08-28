@@ -19,9 +19,9 @@
     <br />
     <a href="https://acapra-projeto-v1.netlify.app/">Acessar Demo</a>
     &middot;
-    <a href="issues/new?labels=bug&template=bug-report---.md">Reportar bug</a>
+    <a href="https://github.com/WanderMauro/ACAPRA/issues">Reportar bug</a>
     &middot;
-    <a href="issues/new?labels=enhancement&template=feature-request---.md">Sugerir melhoria</a>
+    <a href="https://github.com/WanderMauro/ACAPRA/issues">Sugerir melhoria</a>
   </p>
 </div>
 
@@ -152,6 +152,7 @@ Projeto online: `https://acapra-projeto-v1.netlify.app/`
 - Comunidade open source
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
 
 
 
