@@ -91,7 +91,7 @@ Estas instruções ajudam você a rodar o projeto localmente para desenvolviment
 
 1. Clone o repositório
    ```sh
-   git clone https://github.com/<seu-usuario>/ACAPRA.git
+   git clone https://github.com/WanderMauro/ACAPRA.git
    ```
 2. Abra a pasta do projeto no seu editor
 3. Abra o arquivo `index.html` diretamente no navegador
@@ -152,5 +152,6 @@ Projeto online: `https://acapra-projeto-v1.netlify.app/`
 - Comunidade open source
 
 <p align="right">(<a href="#readme-top">voltar ao topo</a>)</p>
+
 
 
