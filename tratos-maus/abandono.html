@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não Abandone - Campanha Contra o Abandono Animal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333333;
+            background: linear-gradient(135deg, #fefbfd 0%, #f7f3f9 100%);
+            line-height: 1.6;
+        }
+        
+        header {
+            display: flex;
+            background-color: white;
+            height: 7vh;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #f3bef1;
+            padding: 0 40px;
+        }
+
+        .logo {
+            height: 50px;
+            width: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .denunciar-maus-tratos {
+            background-color: rgba(180, 50, 200, 0.3);
+            padding: 10px;
+            border-radius: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .denunciar-maus-tratos:hover {
+            background-color: rgba(180, 50, 200, 0.5);
+        }
+
+        .redes {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 10px;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .redes img {
+            height: 22px;
+            width: 22px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, .25));
+            transition: transform 0.3s ease;
+        }
+
+        .redes img:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, .35));
+        }
+
+        .redes p {
+            color: #440a90;
+        }
+        
+        .main-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        h1 {
+            color: #6a0dad;
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #6a0dad;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .section-text {
+            margin-top: 30px;
+            text-align: justify;
+            padding: 20px 0;
+        }
+
+        .how-to-help {
+            margin-top: 30px;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .how-to-help ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .how-to-help li {
+            font-size: 1.1rem;
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #d3a9d3;
+        }
+        
+        .cta-section {
+            margin-top: 30px;
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #e6e6fa;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-section h2 {
+            color: #4b0082;
+            margin: 0;
+            font-size: 2rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #8a2be2;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #6a0dad;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.9rem;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="../index.html"><img class="logo" src="assets/header/logo.png" alt="pata-animal"></a>
+        
+        <nav>
+            <div class="missao">
+                <a href="../index.html">Missão</a>
+            </div>
+            <div class="adotar">
+                <a href="../adotar.html">Adotar</a>
+            </div>
+            <div class="adotados">
+                <a href="../adotados.html">Adotados</a>
+            </div>
+            <div class="ajude">
+                <a href="../como-ajudar.html">Ajude</a>
+            </div>
+            <div class="denunciar-maus-tratos">
+                <a href="tratos-maus.html">Denunciar maus tratos</a>
+            </div>
+        </nav>
+        <div class="redes">
+            <a href="https://www.instagram.com/acaprabrusquesc/reels/"><img src="assets/header/instagram.png" alt="Instagram" /></a>
+            <a href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/"><img src="assets/header/facebook.png" alt="Facebook" /></a>
+            <a href="https://wa.me/5547996736046"><img src="assets/header/whatsapp.png" alt="WhatsApp" /></a>
+            <p>Siga nossos passos!</p>
+        </div>
+    </header>
+
+    <div class="main-content">
+
+        <section class="section-header">
+            <h1>Não Abandone</h1>
+            <p style="font-size: 1.1rem; color: #777777;">A sua responsabilidade é a única certeza de um futuro feliz para o seu amigo de quatro patas.</p>
+        </section>
+
+        <section class="section-text">
+            <h2>O Silêncio de um Grito sem Voz</h2>
+            <p style="font-size: 1rem; margin-bottom: 20px;">Anualmente, milhares de cães e gatos são abandonados em nosso país. As razões, muitas vezes fúteis, incluem a mudança de endereço, a chegada de um bebê, o custo com alimentação e veterinário ou simplesmente o fato de o filhote ter crescido e perdido a "graça". Esses atos de crueldade deixam para trás seres que sentem medo, dor e solidão.</p>
+            <p style="font-size: 1rem; margin-bottom: 20px;">O abandono não é apenas um problema moral; é uma questão de saúde pública e de segurança. Animais abandonados podem ser vetores de doenças, causar acidentes de trânsito e se tornarem presas fáceis para a violência humana. Eles perdem seu lar, sua segurança e a única família que conhecem, sendo forçados a lutar pela sobrevivência em um mundo hostil e sem compaixão.</p>
+            <p style="font-size: 1rem;">O abandono de animais, de acordo com a Lei 9.605/98 e a Lei 14.064/20, é considerado um crime ambiental, sujeito a penalidades que incluem multas e reclusão de dois a cinco anos. Infelizmente, a impunidade ainda é alta, reforçando a necessidade de uma conscientização social profunda.</p>
+        </section>
+
+        <section class="how-to-help">
+            <h2>Como Você Pode Fazer a Diferença</h2>
+            <ul>
+                <li style="color: #333333;">
+                    <strong style="color: #8c42a0;">Adoção Consciente:</strong> Antes de adotar, reflita sobre a responsabilidade de cuidar de um animal por toda a sua vida. Considere os custos, o tempo e o compromisso emocional.
+                </li>
+                <li style="color: #333333;">
+                    <strong style="color: #8c42a0;">Esterilização e Castração:</strong> A superpopulação é uma das principais causas do abandono. Incentive a castração de animais para prevenir ninhadas indesejadas.
+                </li>
+                <li style="color: #333333;">
+                    <strong style="color: #8c42a0;">Denuncie:</strong> Não se cale diante de um crime. Denuncie casos de abandono e maus-tratos às autoridades competentes (Polícia Militar, Delegacias de Meio Ambiente ou ONGs locais).
+                </li>
+                <li style="color: #333333;">
+                    <strong style="color: #8c42a0;">Apoie ONGs e Abrigos:</strong> Voluntarie-se, faça doações ou apoie financeiramente abrigos e ONGs que resgatam e cuidam de animais abandonados.
+                </li>
+            </ul>
+        </section>
+
+        <section class="cta-section">
+            <h2>A Sua Ação Pode Mudar Uma Vida</h2>
+            <p style="font-size: 1.2rem; color: #555555; margin-top: 10px;">Junte-se à causa. Um ato de compaixão tem o poder de salvar uma vida indefesa. </p>
+            <a href="../como-ajudar.html" class="cta-button">Faça a Diferença Agora</a>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Campanha Não Abandone. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
