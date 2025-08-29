@@ -2,119 +2,144 @@
 <html lang="pt-br">
 
 <head>
-  <meta name="author" content="Brendon">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Site da ACAPRA, que promove a adoção de animais e combate aos maus-tratos.">
-  <title>Home</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadados para SEO -->
+    <title>ACAPRA - Proteção e Adoção de Animais em Brusque</title>
+    <meta name="description" content="A ACAPRA atua há mais de 20 anos em Brusque, resgatando animais em situação de maus-tratos e promovendo a adoção responsável. Ajude a nossa causa.">
+    <meta name="author" content="Brendon, Nicoly, Wander">
+    <meta name="keywords" content="adoção de animais, resgate animal, ONG, Brusque, ACAPRA, cães, gatos">
+
+    <!-- Ícone da página (Favicon) e Estilos -->
+    <link rel="icon" type="image/png" href="assets/images/header/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Carregamento otimizado de Scripts -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" as="script">
 </head>
 
 <body>
-  <header>
-    <div class="inner">
-      <div class="logo">
-        <img src="assets/images/header/logo.png" alt="Logo ACAPRA" />
-      </div>
-      <nav>
-        <a href="index.html">Missão</a>
-        <a href="adotar.html">Adotar</a>
-        <a href="adotados.html">Adotados</a>
-        <a href="como-ajudar.html">Ajude</a>
-        <a href="maus-tratos.html">Denunciar maus tratos</a>
-      </nav>
-      <div class="redes">
-        <a href="https://www.instagram.com/acaprabrusquesc/reels/"><img src="assets/images/header/instagram.png"
-            alt="Instagram" /></a>
-        <a
-          href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/"><img
-            src="assets/images/header/facebook.png" alt="Facebook" /></a>
-        <a href="https://wa.me/5547996736046"><img src="assets/images/header/whatsapp.png" alt="WhatsApp" /></a>
-        <p>Siga nossos passos pelas redes sociais!</p>
-      </div>
-    </div>
-  </header>
-  <img class="top-fade" src="assets/images/home/home-fade1.png" alt="Decoração superior" />
+    <!-- Contêiner para a animação de partículas decorativas -->
+    <div id="tsparticles" aria-hidden="true"></div>
 
-  <section>
-    <h2>Missão da ACAPRA</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="body">
-          <h4>Quem somos</h4>
-          <p>A ACAPRA atua há mais de 20 anos em Brusque, sem vínculos políticos e com trabalho 100% voluntário, resgatando e amparando animais em situação de maus-tratos, abandono ou vulnerabilidade.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="body">
-          <h4>Missão</h4>
-          <p>Lutar contra o sofrimento e o abandono animal, promovendo resgates, cuidados veterinários, castração, bem-estar e adoção responsável, com apoio da comunidade.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="body">
-          <h4>O que fazemos</h4>
-          <ul>
-            <li>Resgates e amparo a cães e gatos.</li>
-            <li>Feirinhas de adoção e pós-adoção responsável.</li>
-            <li>Campanhas: rifas, doações via PIX e pedágios solidários.</li>
-            <li>Parcerias com lares temporários e clínicas para tratamento e castração.</li>
-            <li>Defesa de políticas públicas e clínica veterinária municipal.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <div class="body">
-          <h4>Desafios atuais</h4>
-          <p>Em 2025, enfrentamos uma dívida crítica que reduziu atendimentos. Seguimos firmes com campanhas de arrecadação e educação sobre posse responsável e castração.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="body">
-          <h4>Como ajudar</h4>
-          <ul>
-            <li>Doações via PIX (veja em "Ajude").</li>
-            <li>Participe de rifas e pedágios solidários.</li>
-            <li>Ofereça lar temporário e doe itens.</li>
-            <li>Divulgue as feirinhas e animais disponíveis.</li>
-          </ul>
-          <p class="muted">Acompanhe: <strong>@acaprabrusquesc</strong></p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Cabeçalho Principal (Unificado para todo o site) -->
+    <header class="cabecalho">
+        <div class="container cabecalho-container">
+            <a href="index.html" class="logotipo" aria-label="Página Inicial da ACAPRA">
+                <img src="assets/images/header/logo.png" alt="Logotipo da ACAPRA" />
+            </a>
 
-  <section class="difference">
-    <h2>Como fazemos a diferença?</h2>
-    <div class="difference-grid">
-      <div class="difference-item">
-        <img src="assets/images/home/maoanimais.png" alt="mão impondo animais">
-        <h3>+500 adoções</h3>
-      </div>
-      <div class="difference-item">
-        <img src="assets/images/home/patacanina.png" alt="pata canina">
-        <h3>40 pets disponíveis</h3>
-      </div>
-      <div class="difference-item">
-        <img src="assets/images/home/gato-e-cachorro.png" alt="gato e cachorro">
-        <h3>+600 castrações</h3>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div>
-      <h2>Adote um Amigo</h2>
-    </div>
-    <ul>
-      <li>Documento com foto (RG ou CNH)</li>
-      <li>Comprovante de renda</li>
-      <li>Comprovante de residência</li>
-      <li>Foto do local onde o animal irá viver</li>
-      <li>Fotos de outros animais da casa e suas carteiras de vacinação</li>
-      <li>Assinatura do compromisso de castração e vacinação</li>
-    </ul>
-  </section>
-  <h2>+40 PETS DISPONÍVEIS</h2>
+            <nav class="menu-navegacao" id="menuPrincipal" aria-label="Navegação principal">
+                <a href="index.html" class="link-ativo" aria-current="page">Missão</a>
+                <a href="adotar.html">Adotar</a>
+                <a href="adotados.html">Adotados</a>
+                <a href="como-ajudar.html">Ajude</a>
+                <a href="maus-tratos.html">Denunciar</a>
+            </nav>
+
+            <div class="header-acoes">
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/acaprabrusquesc/reels/" target="_blank" aria-label="Visite o nosso Instagram">
+                        <img src="assets/images/header/instagram2.png" alt="Ícone do Instagram" />
+                    </a>
+                    <a href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/" target="_blank" aria-label="Visite o nosso Facebook">
+                        <img src="assets/images/header/facebook2.png" alt="Ícone do Facebook" />
+                    </a>
+                </div>
+                <button class="menu-mobile-botao" id="botaoMenu" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    &#9776; <!-- Ícone "hambúrguer" -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container conteudo-principal">
+
+        <!-- Seção Hero -->
+        <section class="hero" aria-labelledby="hero-titulo">
+            <div class="hero-texto">
+                <h1 id="hero-titulo">Resgatando vidas, <span class="destaque">unindo corações.</span></h1>
+                <p class="subtitulo">Somos voluntários dedicados a dar uma segunda oportunidade a cães e gatos em risco. Conheça o nosso trabalho e faça parte desta missão.</p>
+                <div class="hero-botoes">
+                    <a href="adotar.html" class="botao-principal">Quero Adotar</a>
+                    <a href="como-ajudar.html" class="botao-secundario">Como Ajudar</a>
+                </div>
+            </div>
+            <div class="hero-imagem">
+                <img src="assets/images/home/gato-e-cachorro.png" alt="Desenho de um cão e um gato lado a lado." loading="eager">
+            </div>
+        </section>
+
+        <!-- Seção Nossa Missão -->
+        <section class="secao-info" aria-labelledby="missao-titulo">
+            <h2 id="missao-titulo" class="titulo-secao">A nossa Missão</h2>
+            <div class="grid-missao">
+                <div class="card-info">
+                    <h3>Quem Somos</h3>
+                    <p>A ACAPRA atua há mais de 20 anos em Brusque, com trabalho 100% voluntário, resgatando e amparando animais em situação de maus-tratos e abandono.</p>
+                </div>
+                <div class="card-info">
+                    <h3>O Que Fazemos</h3>
+                    <p>Lutamos contra o sofrimento animal, promovendo resgates, cuidados veterinários, castração e, o mais importante, a adoção responsável.</p>
+                </div>
+                <div class="card-info">
+                    <h3>Desafios Atuais</h3>
+                    <p>Enfrentamos uma dívida crítica que limita os nossos atendimentos. Continuamos firmes com campanhas de arrecadação e educação sobre posse responsável.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Impacto (Números) -->
+        <section class="secao-impacto" aria-labelledby="impacto-titulo">
+             <h2 id="impacto-titulo" class="titulo-secao">O nosso impacto em números</h2>
+            <div class="impacto-grid">
+                <div class="impacto-item">
+                    <span class="impacto-numero">+500</span>
+                    <p class="impacto-descricao">Adoções bem-sucedidas</p>
+                </div>
+                <div class="impacto-item">
+                    <span class="impacto-numero">+600</span>
+                    <p class="impacto-descricao">Castrações realizadas</p>
+                </div>
+                <div class="impacto-item">
+                    <span class="impacto-numero">40+</span>
+                    <p class="impacto-descricao">Animais à espera de um lar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Adote um Amigo -->
+        <section class="secao-processo-adocao" aria-labelledby="adocao-titulo">
+            <div class="adocao-conteudo">
+                <h2 id="adocao-titulo" class="titulo-secao">Adote um Amigo</h2>
+                <p>Adotar é um ato de amor que exige responsabilidade. Para garantir o bem-estar dos nossos animais, seguimos um processo cuidadoso. Veja os requisitos:</p>
+                <ul>
+                    <li>Documento com foto (RG ou CNH) e comprovativo de residência.</li>
+                    <li>Fotos do local onde o animal irá viver.</li>
+                    <li>Se já tiver outros animais, fotos e as suas carteiras de vacinação.</li>
+                    <li>Assinatura do compromisso de castração e vacinação.</li>
+                </ul>
+                <a href="adotar.html" class="botao-principal">Ver Animais Disponíveis</a>
+            </div>
+            <div class="adocao-imagem">
+                 <img src="assets/images/home/maoanimais.png" alt="Desenho de uma mão a proteger um cão e um gato." loading="lazy">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Unificado -->
+    <footer class="rodape">
+        <div class="container">
+            <small>&copy; 2025 ACAPRA - Todos os direitos reservados.</small>
+            <p class="creditos">Feito com ❤️ por voluntários</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" defer></script>
+
 </body>
-
 </html>
