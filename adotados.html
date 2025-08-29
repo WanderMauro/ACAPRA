@@ -1,116 +1,171 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Cachorros Adotados</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadados para SEO (Otimização para Mecanismos de Busca) -->
+    <title>Adotados - Finais Felizes | ACAPRA</title>
+    <meta name="description" content="Veja as emocionantes histórias de superação dos animais que encontraram um lar feliz e amoroso através da ACAPRA.">
+    <meta name="author" content="Nicoly, Wander">
+
+    <!-- Ícone da página (Favicon) e Estilos -->
+    <link rel="icon" type="image/png" href="assets/images/header/logo.png">
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Otimização de Carregamento -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" as="script">
 </head>
 
 <body>
-  <header>
-    <div class="inner">
-      <div class="logo">
-        <img src="assets/images/header/logo.png" alt="Logo ACAPRA" />
-      </div>
-      <nav>
-        <a href="index.html">Missão</a>
-        <a href="adotar.html">Adotar</a>
-        <a href="adotados.html">Adotados</a>
-        <a href="como-ajudar.html">Ajude</a>
-        <a href="maus-tratos.html">Denunciar maus tratos</a>
-      </nav>
-      <div class="redes">
-        <a href="https://www.instagram.com/acaprabrusquesc/reels/"><img src="assets/images/header/instagram.png"
-            alt="Instagram" /></a>
-        <a
-          href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/"><img
-            src="assets/images/header/facebook.png" alt="Facebook" /></a>
-        <a href="https://wa.me/5547996736046"><img src="assets/images/header/whatsapp.png" alt="WhatsApp" /></a>
-        <p>Siga nossos passos pelas redes sociais!</p>
-      </div>
-    </div>
-  </header>
+    <!-- Contêiner para a animação de partículas.
+         'aria-hidden="true"' informa aos leitores de tela que este elemento é puramente
+         decorativo e pode ser ignorado. -->
+    <div id="tsparticles" aria-hidden="true"></div>
 
-  <h1 class="center">Cachorros Adotados</h1>
-  <p class="center"><em>E suas histórias de superação</em></p>
-  <hr>
+    <!-- Cabeçalho Principal -->
+    <header class="cabecalho">
+        <div class="container cabecalho-container">
 
-  <div class="container">
-    <fieldset>
-      <strong>Amora</strong>
-      <img src="assets/images/adotados/amora.png" alt="Amora" width="280px">
-      <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>História:</strong> Sobreviveu a atropelamento<span class="animal" data-tip="Amora foi resgatada após sobreviver a um
-        atropelamento e vencer a cinomose. Chegou
-        assustada, com marcas de um passado difícil, mas mostrou uma força incrível. Com cuidados e muito amor, superou
-        o medo e aprendeu a confiar novamente. Hoje, adotada por uma família amorosa, Amora vive feliz, brincando e se
-        sentindo segura. Sua história é um exemplo de resiliência e esperança, mostrando que todo animal merece uma
-        segunda chance.">[...]</span></p>
-      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
-    </fieldset>
+            <!-- Logotipo com link para a página inicial, uma prática padrão de UX. -->
+            <a href="index.html" class="logotipo">
+                <img src="assets/images/header/logo.png" alt="Logotipo da ACAPRA" />
+            </a>
 
-    <fieldset>
-      <strong>Oliver</strong>
-      <img src="assets/images/adotados/oliver.png" alt="Oliver" width="280">
-      <p><strong>Gênero:</strong> Macho</p>
-      <p><strong>História:</strong> Agredido pelo tutor<span class="animal" data-tip="Oliver, o cachorro que foi resgatado após ser brutalmente agredido pelo tutor,
-        sofrendo uma grave miíase na cabeça, encontrou um final feliz. Graças ao resgate e aos cuidados dedicados, ele
-        se recuperou e foi adotado por uma família amorosa. Hoje, Oliver está bem, vivendo uma vida cheia de carinho e
-        segurança.">[...]</span></p>
-      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
-    </fieldset>
+            <!-- Navegação Principal do site.
+                 'aria-label' descreve o propósito do bloco de navegação. -->
+            <nav class="menu-navegacao" id="meuMenu" aria-label="Navegação principal">
+                <a href="index.html">Missão</a>
+                <a href="adotar.html">Adotar</a>
+                <!-- 'aria-current="page"' indica a página ativa, melhorando a acessibilidade. -->
+                <a href="adotados.html" class="link-ativo" aria-current="page">Adotados</a>
+                <a href="como-ajudar.html">Ajude</a>
+                <a href="maus-tratos.html">Denunciar</a>
+            </nav>
 
-    <fieldset>
-      <strong>Luna</strong>
-      <img src="assets/images/adotados/luna.png" alt="Luna" width="280">
-      <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>História:</strong> Abandonada pelo dono<span class="animal" data-tip="Luna era apenas uma filhote quando conheceu a dor do abandono. Chegou até nós
-        assustada e vulnerável, mas com um coração cheio de esperança. Dócil e tranquila, ela conquistou a todos com seu
-        jeitinho carinhoso e sua vontade de viver. Não sabíamos ao certo como ela se adaptaria a outros animais, mas uma
-        coisa era clara: Luna merecia uma família que a amasse e a protegesse. E foi exatamente isso que aconteceu!
-        Hoje, Luna está em um lar cheio de amor, onde recebe todo o carinho e cuidado que sempre mereceu.">[...]</span>
-      </p>
-      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
-    </fieldset>
+            <!-- Links para Redes Sociais -->
+            <div class="redes-sociais">
+                <p>Siga nossos passos!</p>
+                <!-- 'target="_blank"' abre em nova aba.  -->
+                <a href="https://www.instagram.com/acaprabrusquesc/reels/" target="_blank"  aria-label="Visite nosso Instagram">
+                    <img src="assets/images/header/instagram2.png" alt="Ícone do Instagram" />
+                </a>
+                <a href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/" target="_blank" aria-label="Visite nosso Facebook">
+                    <img src="assets/images/header/facebook2.png" alt="Ícone do Facebook" />
+                </a>
+                <a href="https://wa.me/5547996736046" target="_blank"  aria-label="Fale conosco no WhatsApp">
+                    <img src="assets/images/header/whatsapp-black.png" alt="Ícone do WhatsApp" />
+                </a>
+            </div>
 
-    <fieldset>
-      <strong>Pitchuca</strong>
-      <img src="assets/images/adotados/pitchuca.png" alt="Pitchuca" width="280">
-      <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>História:</strong> Um pedido urgente<span class="animal" data-tip="Recebemos um pedido de ajuda urgente e nos deslocamos imediatamente para o local.
-        Quando desci do carro, pensei que estávamos indo apenas para buscar o corpinho dela. O diagnóstico era incerto,
-        ela não tinha forças para se maner em pé e seu olhar, repleto de medo, refletia tudo o que deve ter enfrentado.
-        Porém ela tinha uma força interior muito maior do que imaginávamos, e continuou lutando com bravura. Chegamos a
-        cogitar desistir, mas ela nos ensinou que, diante de qualquer obstáculo, é necessário ter coragem e
-        perseverança. Hoje, recuperada e feliz, ela encontrou seu lar definitivo, e sua história se tornou um símbolo de
-        superação e esperança.">[...]</span></p>
-      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
-    </fieldset>
+            <!-- Botão do Menu Mobile -->
+            <div class="menu-mobile-botao">
+                <!-- Atributos de acessibilidade:
+                     'aria-controls' conecta o botão ao menu que ele controla.
+                     'aria-expanded' indica se o menu está aberto ou fechado (deve ser gerenciado via JS).
+                     'aria-label' descreve a ação do botão. -->
+                <button id="botaoMenu" aria-controls="meuMenu" aria-expanded="false" aria-label="Abrir menu">
+                    &#9776; <!-- Caractere HTML para o ícone "hambúrguer" -->
+                </button>
+            </div>
+        </div>
+    </header>
 
-    <fieldset>
-      <strong>Branca</strong>
-      <img src="assets/images/adotados/branca.png" alt="Branca" width="280">
-      <p><strong>Gênero:</strong> Fêmea</p>
-      <p><strong>História:</strong> Em situação crítica<span class="animal" data-tip="Resgatamos Branca, uma cachorra em situação crítica, de um morador de rua que a
-        explorava para criar filhotes e vendê-los. Ela estava com sangramento e secreção verde, sintomas de piometra,
-        uma infecção grave no útero. Apesar de resistência do tutor, que não queria castrá-la para continuar lucrando, a ONG
-        conseguiu levá-la ao veterinário. Branca foi castrada a tempo e está se recuperando.">[...]</span></p>
-      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
-    </fieldset>
+    <!-- Conteúdo Principal da Página -->
+    <main class="container conteudo-principal">
 
-    <fieldset>
-      <strong>Sandy e Junior</strong>
-      <img src="assets/images/adotados/shady-e-junior.png" alt="Sandy-e-Junior" width="280">
-      <p><strong>Gênero:</strong> Fêmea e Macho</p>
-      <p><strong>História:</strong> Severamente anêmicos<span class="animal" data-tip="Sandy e Junior chegaram até nós através de um vídeo enviado pelo WhatsApp. Após
-        exames e tratamento, os dois se recuperaram e hoje estão 100% saudáveis. Foram adotados juntos por uma família
-        que lhes dá todo o carinho e conforto que merecem.">[...]</span></p>
-      <button onclick="location.href='https://forms.gle/bQYFtEDo2iwMqyR57'">Adotar</button>
-    </fieldset>
+        <!-- Seção 1: Título da Página -->
+        <section class="secao-titulo" aria-labelledby="titulo-pagina">
+            <h1 id="titulo-pagina">Finais Felizes</h1>
+            <p>Cada adoção escreve uma nova história de amor e superação. Veja alguns dos nossos resgatados que encontraram um lar para sempre!</p>
+        </section>
 
-  </div>
+        <!-- Título da Galeria
+             Este título agora está FORA da grade da galeria para corrigir o layout. -->
+        <h2 class="titulo-secao">Galeria de Animais Adotados</h2>
+
+        <!-- Seção 2: Galeria de Animais Adotados -->
+        <section class="galeria-animais">
+            <!-- Cada animal é um <article>, pois representa um item de conteúdo completo e independente. -->
+            <article class="cartao-animal">
+                <img src="assets/images/adotados/amora.png"  alt="Cachorra Amora, feliz em seu novo lar.">
+                <div class="cartao-conteudo">
+                    <h3>Amora</h3>
+                    <p class="genero">Gênero: Fêmea</p>
+                    <p class="historia">Amora foi resgatada após sobreviver a um atropelamento e vencer a cinomose. Hoje, adotada, vive feliz e segura.</p>
+                </div>
+            </article>
+
+            <article class="cartao-animal">
+                <img src="assets/images/adotados/oliver.png" alt="Cachorro Oliver, recuperado e amado.">
+                <div class="cartao-conteudo">
+                    <h3>Oliver</h3>
+                    <p class="genero">Gênero: Macho</p>
+                    <p class="historia">Resgatado após ser brutalmente agredido, recuperou-se e foi adotado por uma família amorosa.</p>
+                </div>
+            </article>
+
+            <article class="cartao-animal">
+                <img src="assets/images/adotados/luna.png"  alt="Cachorrinha Luna, dócil e feliz.">
+                <div class="cartao-conteudo">
+                    <h3>Luna</h3>
+                    <p class="genero">Gênero: Fêmea</p>
+                    <p class="historia">Ainda filhote, conheceu o abandono, mas conquistou a todos com seu jeito dócil e hoje tem um lar cheio de amor.</p>
+                </div>
+            </article>
+
+            <article class="cartao-animal">
+                <img src="assets/images/adotados/pitchuca.png" alt="Cachorra Pitchuca, forte e recuperada.">
+                <div class="cartao-conteudo">
+                    <h3>Pitchuca</h3>
+                    <p class="genero">Gênero: Fêmea</p>
+                    <p class="historia">Chegou sem forças para ficar em pé, mas sua força interior era imensa. Hoje, recuperada, encontrou seu lar definitivo.</p>
+                </div>
+            </article>
+
+            <article class="cartao-animal">
+                <img src="assets/images/adotados/branca.png"  alt="Cachorra Branca, salva e saudável.">
+                <div class="cartao-conteudo">
+                    <h3>Branca</h3>
+                    <p class="genero">Gênero: Fêmea</p>
+                    <p class="historia">Resgatada em situação crítica, era explorada para criar. Foi castrada a tempo e sua vida foi salva.</p>
+                </div>
+            </article>
+
+            <article class="cartao-animal">
+                <img src="assets/images/adotados/shady-e-junior.png"  alt="Os irmãos Sandy e Junior, adotados juntos.">
+                <div class="cartao-conteudo">
+                    <h3>Sandy e Junior</h3>
+                    <p class="genero">Gênero: Fêmea e Macho</p>
+                    <p class="historia">Abandonados, chegaram com anemia severa. Após tratamento, se recuperaram e foram adotados juntos!</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- Seção 3: Chamada para Ação (Call to Action) -->
+        <section class="chamada-acao" aria-labelledby="titulo-cta">
+            <h2 id="titulo-cta">Quer escrever um final feliz também?</h2>
+            <p>Seu próximo melhor amigo pode estar esperando por você.</p>
+            <a href="adotar.html" class="botao-principal">Veja os animais para adoção</a>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container">
+            <!-- A tag <small> é semanticamente correta para textos de menor importância, como direitos autorais. -->
+            <small>&copy; 2025 ACAPRA - Todos os direitos reservados.</small>
+            <p class="creditos">Feito com ❤️ por voluntários</p>
+        </div>
+    </footer>
+
+    <!-- Scripts no final do body para melhor performance.
+         O atributo 'defer' garante que o script só execute após o HTML ser totalmente analisado,
+         sem bloquear a renderização da página. -->
+    <script src="menu-js.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" defer></script>
 
 </body>
-
 </html>
