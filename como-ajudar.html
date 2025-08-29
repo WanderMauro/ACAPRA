@@ -2,115 +2,98 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Como Ajudar? - ACAPRA</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Como Ajudar - ACAPRA</title>
+    <meta name="description" content="Existem muitas maneiras de apoiar a ACAPRA: doe via PIX, seja voluntário, ofereça um lar temporário ou doe itens. Toda a ajuda é fundamental.">
+    <link rel="icon" type="image/png" href="assets/images/header/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" as="script">
 </head>
 
 <body>
-  <header>
-    <div class="inner">
-      <div class="logo">
-        <img src="assets/images/header/logo.png" alt="Logo ACAPRA" />
-      </div>
-      <nav>
-        <a href="index.html">Missão</a>
-        <a href="adotar.html">Adotar</a>
-        <a href="adotados.html">Adotados</a>
-        <a href="como-ajudar.html">Ajude</a>
-        <a href="maus-tratos.html">Denunciar maus tratos</a>
-      </nav>
-      <div class="redes">
-        <a href="https://www.instagram.com/acaprabrusquesc/reels/"><img src="assets/images/header/instagram.png"
-            alt="Instagram" /></a>
-        <a
-          href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/"><img
-            src="assets/images/header/facebook.png" alt="Facebook" /></a>
-        <a href="https://wa.me/5547996736046"><img src="assets/images/header/whatsapp.png" alt="WhatsApp" /></a>
-        <p>Siga nossos passos pelas redes sociais!</p>
-      </div>
-    </div>
-  </header>
+    <div id="tsparticles" aria-hidden="true"></div>
 
-  <section class="main-section">
-    <img src="assets/images/ajude-e-maus-tratos/como-ajudar.png" alt="Como Ajudar?">
-    <img src="assets/images/ajude-e-maus-tratos/qr-code.png" alt="PIX ACAPRA">
-  </section>
+    <header class="cabecalho">
+        <div class="container cabecalho-container">
+            <a href="index.html" class="logotipo" aria-label="Página Inicial da ACAPRA">
+                <img src="assets/images/header/logo.png" alt="Logotipo da ACAPRA" />
+            </a>
+            <nav class="menu-navegacao" id="menuPrincipal" aria-label="Navegação principal">
+                <a href="index.html">Missão</a>
+                <a href="adotar.html">Adotar</a>
+                <a href="adotados.html">Adotados</a>
+                <a href="como-ajudar.html" class="link-ativo" aria-current="page">Ajude</a>
+                <a href="maus-tratos.html">Denunciar</a>
+            </nav>
+            <div class="header-acoes">
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/acaprabrusquesc/reels/" target="_blank" aria-label="Visite o nosso Instagram"><img src="assets/images/header/instagram2.png" alt="Ícone do Instagram" /></a>
+                    <a href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/" target="_blank" aria-label="Visite o nosso Facebook"><img src="assets/images/header/facebook2.png" alt="Ícone do Facebook" /></a>
+                </div>
+                <button class="menu-mobile-botao" id="botaoMenu" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">&#9776;</button>
+            </div>
+        </div>
+    </header>
 
-  <section>
-    <h2>Como você pode ajudar hoje</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="body">
-          <h4>Doe via PIX</h4>
-          <p>Use o QR Code acima para doar qualquer valor. Sua ajuda mantém consultas e cirurgias, compra ração, vermífugos e custeia resgates.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="body">
-          <h4>Seja voluntário(a)</h4>
-          <p>Precisamos de apoio em feiras de adoção, transporte a clínicas, visitas pós-adoção e criação de conteúdo.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="body">
-          <h4>Ofereça lar temporário</h4>
-          <p>Abra sua casa por alguns dias até encontrarmos um lar definitivo. Nós orientamos e ajudamos com insumos.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="body">
-          <h4>Doe itens</h4>
-          <p>Ração (cães e gatos), tapetes higiênicos, patês, caminhas, caixas de transporte, medicamentos e produtos de limpeza são sempre bem-vindos.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="body">
-          <h4>Apadrinhe um animal</h4>
-          <p>Contribua mensalmente com os custos de um resgatado até ele ser adotado. Você acompanha a evolução de perto.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="body">
-          <h4>Compartilhe</h4>
-          <p>Divulgar nossos posts e animais disponíveis nas redes sociais aumenta muito as chances de adoção.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <main class="container conteudo-principal">
+        <section class="secao-titulo" aria-labelledby="ajuda-titulo">
+            <h1 id="ajuda-titulo">A sua ajuda salva vidas</h1>
+            <p>Somos uma organização 100% voluntária e dependemos da generosidade da comunidade para continuar o nosso trabalho.</p>
+        </section>
 
-  <section>
-    <h2>Para onde vai sua doação</h2>
-    <div class="difference-grid">
-      <div class="difference-item">
-        <h3>Atendimento veterinário</h3>
-        <p>Consultas, exames, cirurgias, internações e castrações de cães e gatos resgatados.</p>
-      </div>
-      <div class="difference-item">
-        <h3>Alimentação e bem-estar</h3>
-        <p>Ração, patês, suplementos, vermífugos, antipulgas, caminhas e itens de conforto.</p>
-      </div>
-      <div class="difference-item">
-        <h3>Resgates e logística</h3>
-        <p>Transporte até clínicas, lares temporários e eventos, além de materiais para feiras de adoção.</p>
-      </div>
-    </div>
-  </section>
+        <section class="secao-doacao-pix">
+            <div class="pix-info">
+                <h2>Faça um PIX</h2>
+                <p>A sua doação direta ajuda a custear consultas, cirurgias, medicamentos, ração e resgates. Qualquer valor faz uma enorme diferença.</p>
+                <p class="chave-pix"><strong>Chave PIX (CNPJ):</strong> 48.972.336/0001-08</p>
+                <a href="https://wa.me/5547996736046" target="_blank" class="botao-principal">Contactar para dúvidas</a>
+            </div>
+            <div class="pix-qr">
+                <img src="assets/images/ajude-e-maus-tratos/qr-code.png" alt="QR Code para doação via PIX para a ACAPRA." loading="lazy">
+            </div>
+        </section>
 
-  <section class="center">
-    <h2>Fale com a ACAPRA</h2>
-    <p class="muted">Tem dúvidas, quer se voluntariar ou doar itens? Chame a gente.</p>
-    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px">
-      <a href="https://wa.me/5547996736046" target="_blank" rel="noopener"><button>Falar no WhatsApp</button></a>
-      <a href="https://www.instagram.com/acaprabrusquesc/" target="_blank" rel="noopener"><button>Instagram</button></a>
-      <a href="maus-tratos.html"><button>Denunciar maus tratos</button></a>
-    </div>
-  </section>
+        <section aria-labelledby="outras-formas-titulo">
+            <h2 id="outras-formas-titulo" class="titulo-secao">Outras formas de ajudar</h2>
+            <div class="grid-ajuda">
+                <div class="card-info">
+                    <h4>Seja Voluntário(a)</h4>
+                    <p>Precisamos de apoio em feiras de adoção, transporte para clínicas, visitas pós-adoção e criação de conteúdo.</p>
+                </div>
+                <div class="card-info">
+                    <h4>Ofereça Lar Temporário</h4>
+                    <p>Abra a sua casa por alguns dias até encontrarmos um lar definitivo. Nós orientamos e ajudamos com os custos.</p>
+                </div>
+                <div class="card-info">
+                    <h4>Doe Itens</h4>
+                    <p>Ração, tapetes higiénicos, patês, caminhas, caixas de transporte e medicamentos são sempre bem-vindos.</p>
+                </div>
+                <div class="card-info">
+                    <h4>Apadrinhe um Animal</h4>
+                    <p>Contribua mensalmente com os custos de um resgatado até ele ser adotado. Você acompanha a evolução de perto.</p>
+                </div>
+                <div class="card-info">
+                    <h4>Divulgue</h4>
+                    <p>Partilhar os nossos posts e animais disponíveis nas redes sociais aumenta muito as hipóteses de adoção.</p>
+                </div>
+                <div class="card-info">
+                    <h4>Parcerias</h4>
+                    <p>É uma empresa? Contacte-nos para explorar formas de colaboração e apoio à nossa causa.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer class="center">
-    <p class="muted">Obrigado por apoiar a ACAPRA. Cada gesto faz diferença.</p>
-  </footer>
+    <footer class="rodape">
+        <div class="container">
+            <small>&copy; 2025 ACAPRA - Todos os direitos reservados.</small>
+            <p class="creditos">Feito com ❤️ por voluntários</p>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" defer></script>
 </body>
 
 </html>
