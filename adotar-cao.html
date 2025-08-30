@@ -16,22 +16,47 @@
 
     <header class="cabecalho">
         <div class="container cabecalho-container">
-            <a href="index.html" class="logotipo" aria-label="Página Inicial da ACAPRA">
+
+            <!-- Logotipo com link para a página inicial, uma prática padrão de UX. -->
+            <a href="index.html" class="logotipo">
                 <img src="assets/images/header/logo.png" alt="Logotipo da ACAPRA" />
             </a>
-            <nav class="menu-navegacao" id="menuPrincipal" aria-label="Navegação principal">
+
+            <!-- Navegação Principal do site.
+                 'aria-label' descreve o propósito do bloco de navegação. -->
+            <nav class="menu-navegacao" id="meuMenu" aria-label="Navegação principal">
                 <a href="index.html">Missão</a>
-                <a href="adotar.html" class="link-ativo" aria-current="page">Adotar</a>
-                <a href="adotados.html">Adotados</a>
+                <a href="adotar.html" class="link-ativo">Adotar</a>
+                <!-- 'aria-current="page"' indica a página ativa, melhorando a acessibilidade. -->
+                <a href="adotados.html" aria-current="page">Adotados</a>
                 <a href="como-ajudar.html">Ajude</a>
-                <a href="maus-tratos.html">Denunciar</a>
+                <a href="tratos-maus/tratos-maus.html">Denunciar</a>
             </nav>
-            <div class="header-acoes">
-                <div class="redes-sociais">
-                    <a href="https://www.instagram.com/acaprabrusquesc/reels/" target="_blank" aria-label="Visite o nosso Instagram"><img src="assets/images/header/instagram2.png" alt="Ícone do Instagram" /></a>
-                    <a href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/" target="_blank" aria-label="Visite o nosso Facebook"><img src="assets/images/header/facebook2.png" alt="Ícone do Facebook" /></a>
-                </div>
-                <button class="menu-mobile-botao" id="botaoMenu" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">&#9776;</button>
+
+            <!-- Links para Redes Sociais -->
+            <div class="redes-sociais">
+                <p>Siga nossos passos!</p>
+                <!-- 'target="_blank"' abre em nova aba.  -->
+                <a href="https://www.instagram.com/acaprabrusquesc/reels/" target="_blank"  aria-label="Visite nosso Instagram">
+                    <img src="assets/images/header/instagram2.png" alt="Ícone do Instagram" />
+                </a>
+                <a href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/" target="_blank" aria-label="Visite nosso Facebook">
+                    <img src="assets/images/header/facebook2.png" alt="Ícone do Facebook" />
+                </a>
+                <a href="https://wa.me/5547996736046" target="_blank"  aria-label="Fale conosco no WhatsApp">
+                    <img src="assets/images/header/whatsapp-black.png" alt="Ícone do WhatsApp" />
+                </a>
+            </div>
+
+            <!-- Botão do Menu Mobile -->
+            <div class="menu-mobile-botao">
+                <!-- Atributos de acessibilidade:
+                     'aria-controls' conecta o botão ao menu que ele controla.
+                     'aria-expanded' indica se o menu está aberto ou fechado (deve ser gerenciado via JS).
+                     'aria-label' descreve a ação do botão. -->
+                <button id="botaoMenu" aria-controls="meuMenu" aria-expanded="false" aria-label="Abrir menu">
+                    &#9776; <!-- Caractere HTML para o ícone "hambúrguer" -->
+                </button>
             </div>
         </div>
     </header>
