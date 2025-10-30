@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maus-Tratos</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="pagina-tratos-maus">
+    
+    <header class="cabecalho">
+        <div class="container cabecalho-container">
+
+            <!-- Logotipo com link para a página inicial, uma prática padrão de UX. -->
+            <a href="../index.html" class="logotipo">
+                <img src="../assets/images/header/logo.png" alt="Logotipo da ACAPRA" />
+            </a>
+
+            <!-- Navegação Principal do site.
+                 'aria-label' descreve o propósito do bloco de navegação. -->
+            <nav class="menu-navegacao" id="meuMenu" aria-label="Navegação principal">
+                <a href="../index.html">Missão</a>
+                <a href="../adotar.html">Adotar</a>
+                <!-- 'aria-current="page"' indica a página ativa, melhorando a acessibilidade. -->
+                <a href="../adotados.html" aria-current="page">Adotados</a>
+                <a href="../como-ajudar.html">Ajude</a>
+                <a href="tratos-maus.html" class="link-ativo">Denunciar</a>
+            </nav>
+
+            <!-- Links para Redes Sociais -->
+            <div class="redes-sociais">
+                <p style="color: black;">Siga nossos passos!</p>
+                <!-- 'target="_blank"' abre em nova aba.  -->
+                <a href="https://www.instagram.com/acaprabrusquesc/reels/" target="_blank"  aria-label="Visite nosso Instagram">
+                    <img src="../assets/images/header/instagram2.png" alt="Ícone do Instagram" />
+                </a>
+                <a href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/" target="_blank" aria-label="Visite nosso Facebook">
+                    <img src="../assets/images/header/facebook2.png" alt="Ícone do Facebook" />
+                </a>
+                <a href="https://wa.me/5547996736046" target="_blank"  aria-label="Fale conosco no WhatsApp">
+                    <img src="../assets/images/header/whatsapp-black.png" alt="Ícone do WhatsApp" />
+                </a>
+            </div>
+
+            <!-- Botão do Menu Mobile -->
+            <div class="menu-mobile-botao">
+                <!-- Atributos de acessibilidade:
+                     'aria-controls' conecta o botão ao menu que ele controla.
+                     'aria-expanded' indica se o menu está aberto ou fechado (deve ser gerenciado via JS).
+                     'aria-label' descreve a ação do botão. -->
+                <button id="botaoMenu" aria-controls="meuMenu" aria-expanded="false" aria-label="Abrir menu">
+                    &#9776; <!-- Caractere HTML para o ícone "hambúrguer" -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+      <div class="slide">
+        <div class="item" style="background-image: url('assets/imagem1.jpg');">
+          <div class="content">
+            <div class="name">Exploração para trabalho excessivo / Usar em rinhas</div>
+            <div class="des">Submeter animais a cargas de trabalho desumanas ou forçá-los a lutar é uma forma bárbara de exploração. Essas práticas causam exaustão, ferimentos e morte.</div>
+            <a href="rinhas.html" class="ver-mais-link">Ver Mais</a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url('assets/imagem2.jpg');">
+          <div class="content">
+            <div class="name">abandono</div>
+            <div class="des">Descartar um animal, deixando-o desamparado nas ruas ou em locais ermos, é um ato cruel e irresponsável. O abandono causa sofrimento, fome e expõe a riscos.</div>
+            <a href="abandono.html" class="ver-mais-link">Ver Mais</a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url('assets/imagem3.jpg');">
+          <div class="content">
+            <div class="name">Exposição constante ao sol, frio ou chuva</div>
+            <div class="des">Animais deixados à mercê de condições climáticas extremas, sem abrigo adequado, sofrem severamente. É essencial protegê-los do calor, frio e umidade excessivos.</div>
+            <a href="expor.html" class="ver-mais-link">Ver Mais</a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url('assets/imagem4.jpg');">
+          <div class="content">
+            <div class="name">Manter o animal em local sujo ou apertado</div>
+            <div class="des">Confinar animais em espaços inadequados, sujos ou excessivamente pequenos prejudica sua saúde física e mental, causando estresse e doenças. O ambiente deve ser digno.</div>
+            <a href="local.html" class="ver-mais-link">Ver Mais</a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url('assets/imagem5.jpg');">
+          <div class="content">
+            <div class="name">Privações de alimento e água</div>
+            <div class="des">Deixar um animal sem acesso adequado a alimento e água potável é negligência grave. Isso compromete seriamente sua saúde e bem-estar, configurando maus-tratos.</div>
+            <a href="alimentação.html" class="ver-mais-link">Ver Mais</a>
+          </div>
+        </div>
+        <div class="item" style="background-image: url('assets/imagem6.jpg');">
+          <div class="content">
+            <div class="name">Espancamento, Envenenamento</div>
+            <div class="des">Causar dor, sofrimento ou a morte intencional de um animal por agressão física ou substâncias tóxicas é um crime brutal e inaceitável. A crueldade contra animais deve ser combatida.</div>
+            <a href="envenenamento.html" class="ver-mais-link">Ver Mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

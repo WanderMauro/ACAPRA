@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadados para SEO -->
+    <title>ACAPRA - Proteção e Adoção de Animais em Brusque</title>
+    <!-- 'description' é o texto que aparece sob o título no Google. -->
+    <meta name="description" content="A ACAPRA atua há mais de 20 anos em Brusque, resgatando animais em situação de maus-tratos e promovendo a adoção responsável. Ajude a nossa causa.">
+    <!-- 'author' e 'keywords' (palavras-chave) ajudam os mecanismos de busca a categorizar a página. -->
+    <meta name="author" content="Brendon, Nicoly, Wander">
+    <meta name="keywords" content="adoção de animais, resgate animal, ONG, Brusque, ACAPRA, cães, gatos">
+
+    <!-- Ícone da página (Favicon) e Estilos -->
+    <link rel="icon" type="image/png" href="assets/images/header/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Carregamento otimizado de Scripts -->
+    <!-- 'preload' diz ao navegador para começar a baixar este script o mais rápido possível. -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" as="script">
+</head>
+
+<body>
+    <!-- Contêiner para a animação de partículas decorativas -->
+    <!-- 'aria-hidden="true"' remove este elemento dos leitores de tela (acessibilidade). -->
+    <div id="tsparticles" aria-hidden="true"></div>
+
+    <!-- Cabeçalho Principal (Unificado para todo o site) -->
+    <header class="cabecalho">
+        <div class="container cabecalho-container">
+
+            <!-- Logotipo com link para a página inicial, uma prática padrão de UX. -->
+            <a href="index.html" class="logotipo">
+                <img src="assets/images/header/logo.png" alt="Logotipo da ACAPRA" />
+            </a>
+
+            <!-- Navegação Principal do site.
+                 'aria-label' descreve o propósito do bloco de navegação. -->
+            <nav class="menu-navegacao" id="meuMenu" aria-label="Navegação principal">
+                <!-- 'class="link-ativo"' é usado para destacar a página atual no menu. -->
+                <a href="index.html" class="link-ativo">Missão</a>
+                <a href="adotar.html">Adotar</a>
+                <!-- 'aria-current="page"' indica a página ativa, melhorando a acessibilidade. -->
+                <a href="adotados.html" aria-current="page">Adotados</a>
+                <a href="como-ajudar.html">Ajude</a>
+                <a href="tratos-maus/tratos-maus.html">Denunciar</a>
+            </nav>
+
+            <!-- Links para Redes Sociais -->
+            <div class="redes-sociais">
+                <p>Siga nossos passos!</p>
+                <!-- 'target="_blank"' abre em nova aba.  -->
+                <a href="https://www.instagram.com/acaprabrusquesc/reels/" target="_blank"  aria-label="Visite nosso Instagram">
+                    <img src="assets/images/header/instagram2.png" alt="Ícone do Instagram" />
+                </a>
+                <a href="https://www.facebook.com/pages/Associacao%2520Brusquense%2520de%2520Protecao%2520Aos%2520Animais%2520-%2520Acapra/304050456768695/" target="_blank" aria-label="Visite nosso Facebook">
+                    <img src="assets/images/header/facebook2.png" alt="Ícone do Facebook" />
+                </a>
+                <a href="https://wa.me/5547996736046" target="_blank"  aria-label="Fale conosco no WhatsApp">
+                    <img src="assets/images/header/whatsapp-black.png" alt="Ícone do WhatsApp" />
+                </a>
+            </div>
+
+            <!-- Botão do Menu Mobile -->
+            <div class="menu-mobile-botao">
+                <!-- Atributos de acessibilidade:
+                     'aria-controls' conecta o botão ao menu que ele controla (id="meuMenu").
+                     'aria-expanded' indica se o menu está aberto ou fechado (deve ser gerenciado via JS).
+                     'aria-label' descreve a ação do botão. -->
+                <button id="botaoMenu" aria-controls="meuMenu" aria-expanded="false" aria-label="Abrir menu">
+                    &#9776; <!-- Caractere HTML para o ícone "hambúrguer" -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- A tag <main> define o conteúdo principal e único da página. -->
+    <main class="container conteudo-principal">
+
+        <!-- Seção Hero: A principal área de boas-vindas do site. -->
+        <!-- 'aria-labelledby' conecta a seção ao <h1>, dando-lhe um nome acessível. -->
+        <section class="hero" aria-labelledby="hero-titulo">
+            <!-- Contêiner para o texto da seção hero. -->
+            <div class="hero-texto">
+                <!-- <h1> é o título principal da página. 'id' é usado pela 'aria-labelledby' da seção. -->
+                <h1 id="hero-titulo">Resgatando vidas, 
+                    <!-- <span> é usado para aplicar um estilo especial (classe "destaque") a parte do texto. -->
+                    <span class="destaque">unindo corações.</span>
+                </h1>
+                <p class="subtitulo">Somos voluntários dedicados a dar uma segunda oportunidade a cães e gatos em risco. Conheça o nosso trabalho e faça parte desta missão.</p>
+                <!-- Contêiner para os botões "Call to Action" (CTA). -->
+                <div class="hero-botoes">
+                    <a href="adotar.html" class="botao-principal">Quero Adotar</a>
+                    <a href="como-ajudar.html" class="botao-secundario">Como Ajudar</a>
+                </div>
+            </div>
+            <!-- Contêiner para a imagem principal (hero). -->
+            <div class="adocao-imagem">
+                <!-- 'loading="eager"' (o padrão) instrui o navegador a carregar esta imagem imediatamente,
+                     pois ela é crítica para a primeira visualização (Above the Fold). -->
+                <img src="assets/images/home/gato-e-cachorro.png" alt="Desenho de um cão e um gato lado a lado." loading="eager">
+            </div>
+        </section>
+
+        <!-- Seção Nossa Missão, explicando o que a ONG faz. -->
+        <section class="secao-info" aria-labelledby="missao-titulo">
+            <!-- <h2> é um subtítulo de seção. O 'id' conecta-se ao 'aria-labelledby' da <section>. -->
+            <h2 id="missao-titulo" class="titulo-secao">A nossa Missão</h2>
+            <!-- Contêiner do grid para os cartões de informação. -->
+            <div class="grid-missao">
+                <!-- Um "card" individual de informação. -->
+                <div class="card-info">
+                    <!-- <h3> é um subtítulo dentro do card, hierarquicamente abaixo do <h2> da seção. -->
+                    <h3>Quem Somos</h3>
+                    <p>A ACAPRA atua há mais de 20 anos em Brusque, com trabalho 100% voluntário, resgatando e amparando animais em situação de maus-tratos e abandono.</p>
+                </div>
+                <div class="card-info">
+                    <h3>O Que Fazemos</h3>
+                    <p>Lutamos contra o sofrimento animal, promovendo resgates, cuidados veterinários, castração e, o mais importante, a adoção responsável.</p>
+                </div>
+                <div class="card-info">
+                    <h3>Desafios Atuais</h3>
+                    <p>Enfrentamos uma dívida crítica que limita os nossos atendimentos. Continuamos firmes com campanhas de arrecadação e educação sobre posse responsável.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Impacto (Números), usada como "Prova Social". -->
+        <section class="secao-impacto" aria-labelledby="impacto-titulo">
+             <h2 id="impacto-titulo" class="titulo-secao">O nosso impacto em números</h2>
+            <!-- Grid para os itens de impacto. -->
+            <div class="impacto-grid">
+                <div class="impacto-item">
+                    <!-- <span> usado para estilizar o número de forma destacada. -->
+                    <span class="impacto-numero">+500</span>
+                    <p class="impacto-descricao">Adoções bem-sucedidas</p>
+                </div>
+                <div class="impacto-item">
+                    <span class="impacto-numero">+600</span>
+                    <p class="impacto-descricao">Castrações realizadas</p>
+                </div>
+                <div class="impacto-item">
+                    <span class="impacto-numero">40+</span>
+                    <p class="impacto-descricao">Animais à espera de um lar</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção explicando o processo de adoção. -->
+        <section class="secao-processo-adocao" aria-labelledby="adocao-titulo">
+            <div class="adocao-conteudo">
+                <h2 id="adocao-titulo" class="titulo-secao">Adote um Amigo</h2>
+                <p>Adotar é um ato de amor que exige responsabilidade. Para garantir o bem-estar dos nossos animais, seguimos um processo cuidadoso. Veja os requisitos:</p>
+                <!-- <ul> define uma lista não ordenada (bullets). -->
+                <ul>
+                    <!-- <li> define um item da lista. -->
+                    <li>Documento com foto (RG ou CNH) e comprovativo de residência.</li>
+                    <li>Fotos do local onde o animal irá viver.</li>
+                    <li>Se já tiver outros animais, fotos e as suas carteiras de vacinação.</li>
+                    <li>Assinatura do compromisso de castração e vacinação.</li>
+                </ul>
+                <a href="adotar.html" class="botao-principal">Ver Animais Disponíveis</a>
+            </div>
+            <div class="adocao-imagem">
+                 <!-- 'loading="lazy"' é uma otimização de performance. A imagem só será
+                      baixada (download) quando estiver próxima de entrar na tela. -->
+                 <img src="assets/images/home/maoanimais.png" alt="Desenho de uma mão a proteger um cão e um gato." loading="lazy">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Unificado -->
+    <!-- A tag <footer> define o rodapé da página. -->
+    <footer class="rodape">
+        <div class="container">
+            <!-- A tag <small> é semanticamente correta para "letras pequenas", como direitos autorais. -->
+            <small>&copy; 2025 ACAPRA - Todos os direitos reservados.</small>
+            <p class="creditos">Feito com ❤️ por voluntários</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- O atributo 'defer' garante que o script só execute após o HTML ser
+         completamente analisado (parsed), evitando o bloqueio da renderização. -->
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" defer></script>
+
+</body>
+</html>
