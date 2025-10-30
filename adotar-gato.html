@@ -1,31 +1,62 @@
 <!DOCTYPE html>
+<!-- A tag 'lang' define o idioma principal da página,
+     essencial para acessibilidade (leitores de tela) e SEO. -->
 <html lang="pt-br">
 
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8,
+         garantindo que acentos e caracteres especiais sejam exibidos corretamente. -->
     <meta charset="UTF-8">
+    
+    <!-- 'viewport' é a tag mais importante para design responsivo.
+         'width=device-width' faz a largura da página se adaptar à tela do dispositivo.
+         'initial-scale=1.0' define o nível de zoom inicial quando a página é carregada. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- O <title> é o texto que aparece na aba do navegador e nos resultados do Google. -->
     <title>Gatos para Adoção - ACAPRA</title>
+    
+    <!-- 'description' é um resumo da página usado pelo Google nos resultados de busca. -->
     <meta name="description" content="Conheça os gatos disponíveis para adoção na ACAPRA. Eles são carinhosos e estão à espera de um lar.">
+    
+    <!-- 'icon' (ou favicon) é o pequeno ícone que aparece ao lado do título na aba. -->
     <link rel="icon" type="image/png" href="assets/images/header/logo.png">
+    
+    <!-- 'stylesheet' é a forma padrão de linkar um arquivo CSS externo ao HTML. -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- 'preload' é uma otimização de performance.
+         Ele diz ao navegador para começar a baixar este script em segundo plano,
+         pois ele será necessário em breve. 'as="script"' informa o tipo de recurso. -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" as="script">
 </head>
 
 <body>
+    <!-- Este 'div' é o contêiner para a animação de partículas (tsparticles).
+         'aria-hidden="true"' é uma prática de acessibilidade que diz aos leitores
+         de tela para ignorarem este elemento, já que é puramente decorativo. -->
     <div id="tsparticles" aria-hidden="true"></div>
 
+    <!-- A tag <header> define o bloco de cabeçalho do site (logotipo, navegação, etc.). -->
     <header class="cabecalho">
+        <!-- 'container' é uma classe CSS comum usada para centralizar
+             o conteúdo e limitar sua largura em telas grandes. -->
         <div class="container cabecalho-container">
 
             <!-- Logotipo com link para a página inicial, uma prática padrão de UX. -->
             <a href="index.html" class="logotipo">
+                <!-- A tag <img> exibe uma imagem.
+                     'alt' (texto alternativo) é obrigatório para acessibilidade,
+                     descrevendo a imagem para quem não pode vê-la. -->
                 <img src="assets/images/header/logo.png" alt="Logotipo da ACAPRA" />
             </a>
 
             <!-- Navegação Principal do site.
                  'aria-label' descreve o propósito do bloco de navegação. -->
+            <!-- A tag <nav> é semântica e indica um bloco de links de navegação. -->
             <nav class="menu-navegacao" id="meuMenu" aria-label="Navegação principal">
                 <a href="index.html">Missão</a>
+                <!-- 'class="link-ativo"' é um seletor CSS usado para destacar visualmente a página atual. -->
                 <a href="adotar.html" class="link-ativo">Adotar</a>
                 <!-- 'aria-current="page"' indica a página ativa, melhorando a acessibilidade. -->
                 <a href="adotados.html" aria-current="page">Adotados</a>
@@ -35,8 +66,10 @@
 
             <!-- Links para Redes Sociais -->
             <div class="redes-sociais">
+                <!-- A tag <p> é usada para parágrafos de texto. -->
                 <p>Siga nossos passos!</p>
-                <!-- 'target="_blank"' abre em nova aba.  -->
+                <!-- 'target="_blank"' abre em nova aba.
+                     (Boa prática: Adicionar 'rel="noopener noreferrer"' para segurança). -->
                 <a href="https://www.instagram.com/acaprabrusquesc/reels/" target="_blank"  aria-label="Visite nosso Instagram">
                     <img src="assets/images/header/instagram2.png" alt="Ícone do Instagram" />
                 </a>
@@ -51,7 +84,7 @@
             <!-- Botão do Menu Mobile -->
             <div class="menu-mobile-botao">
                 <!-- Atributos de acessibilidade:
-                     'aria-controls' conecta o botão ao menu que ele controla.
+                     'aria-controls' conecta o botão ao menu que ele controla (id="meuMenu").
                      'aria-expanded' indica se o menu está aberto ou fechado (deve ser gerenciado via JS).
                      'aria-label' descreve a ação do botão. -->
                 <button id="botaoMenu" aria-controls="meuMenu" aria-expanded="false" aria-label="Abrir menu">
@@ -61,33 +94,54 @@
         </div>
     </header>
 
+    <!-- A tag <main> define o conteúdo principal e único da página.
+         É uma tag semântica importante para acessibilidade. -->
     <main class="container conteudo-principal">
+        
+        <!-- A tag <section> é usada para agrupar conteúdos relacionados tematicamente.
+             'aria-labelledby' associa esta seção ao <h1>, dando um nome
+             acessível à região (útil para navegação por "landmarks"). -->
         <section class="secao-titulo" aria-labelledby="titulo-pagina">
+            <!-- <h1> é o título de nível mais alto e mais importante da página.
+                 Só deve haver um <h1> por página para bom SEO e acessibilidade. -->
             <h1 id="titulo-pagina">Gatos para Adoção</h1>
             <p>Eles também merecem muito amor e um lar carinhoso!</p>
         </section>
 
+        <!-- Esta seção agrupa todos os cartões (cards) dos animais. -->
         <section class="galeria-animais" aria-label="Galeria de gatos para adoção">
+            
+            <!-- A tag <article> é usada para um item de conteúdo independente
+                 e auto-contido (como um post de blog, um produto ou, neste caso,
+                 um animal para adoção). -->
             <article class="cartao-animal">
+                <!-- 'loading="lazy"' é uma otimização de performance nativa do HTML.
+                     A imagem só será baixada (download) quando estiver próxima de
+                     entrar na tela do usuário, acelerando o carregamento inicial. -->
                 <img src="assets/images/adocao/gatos/barto.png" alt="O gatinho Bartô." loading="lazy">
                 <div class="cartao-conteudo">
+                    <!-- <h3> é um subtítulo, hierarquicamente abaixo do <h1>.
+                         Usado aqui para o nome do animal. -->
                     <h3>Bartô</h3>
                     <p class="detalhes">Macho • 3 meses</p>
                     <p class="historia">Resgatado com os seus irmãos, foi o único que sobrou. É um filhote com muito amor e energia para dar!</p>
+                <!-- Este é o link de "Call to Action" (Chamada para Ação). -->
                 <a href="https://forms.gle/xTgGbvtz3wD5rUPv6" class="botao-principal cartao-botao" target="_blank">Quero Adotar</a>
                 </div>
             </article>
 
+            <!-- Repetição do componente 'cartao-animal' para o próximo animal. -->
             <article class="cartao-animal">
                 <img src="assets/images/adocao/gatos/difusor.png" alt="O gato Difusor." loading="lazy">
                 <div class="cartao-conteudo">
                     <h3>Difusor</h3>
                     <p class="detalhes">Macho • 6 meses</p>
-                    <p class="historia">Encontrado numa fábrica, chegou extremamente magro. Hoje é 100% saudável e cheio de amor!</p>
+                    <p class="historia">Encontrado numa fábrica, chegouT extremamente magro. Hoje é 100% saudável e cheio de amor!</p>
                 <a href="https://forms.gle/xTgGbvtz3wD5rUPv6" class="botao-principal cartao-botao" target="_blank">Quero Adotar</a>
                 </div>
             </article>
 
+            <!-- Repetição do componente 'cartao-animal' para o próximo animal. -->
             <article class="cartao-animal">
                 <img src="assets/images/adocao/gatos/luzia.png" alt="A gata Luzia." loading="lazy">
                 <div class="cartao-conteudo">
@@ -98,6 +152,7 @@
                 </div>
             </article>
 
+            <!-- Repetição do componente 'cartao-animal' para o próximo animal. -->
             <article class="cartao-animal">
                 <img src="assets/images/adocao/gatos/mimi.png" alt="A gata Mimi." loading="lazy">
                 <div class="cartao-conteudo">
@@ -110,13 +165,20 @@
         </section>
     </main>
 
+    <!-- A tag <footer> define o rodapé da página. -->
     <footer class="rodape">
         <div class="container">
+            <!-- A tag <small> é semanticamente correta para "letras pequenas",
+                 como direitos autorais (copyright) e avisos legais. -->
             <small>&copy; 2025 ACAPRA - Todos os direitos reservados.</small>
             <p class="creditos">Feito com ❤️ por voluntários</p>
         </div>
     </footer>
 
+    <!-- O atributo 'defer' é uma otimização de performance.
+         Ele faz o script ser baixado em paralelo com o HTML,
+         mas só executa DEPOIS que o HTML foi completamente analisado (parsed).
+         Isso evita que o script bloqueie a renderização da página. -->
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" defer></script>
 </body>

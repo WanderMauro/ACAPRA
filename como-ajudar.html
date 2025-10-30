@@ -1,42 +1,75 @@
 <!DOCTYPE html>
+<!-- A tag 'lang' define o idioma principal da página,
+     essencial para acessibilidade (leitores de tela) e SEO. -->
 <html lang="pt-br">
 
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8,
+         garantindo que acentos e caracteres especiais sejam exibidos corretamente. -->
     <meta charset="UTF-8" />
+    
+    <!-- 'viewport' é a tag mais importante para design responsivo.
+         'width=device-width' faz a largura da página se adaptar à tela do dispositivo.
+         'initial-scale=1.0' define o nível de zoom inicial quando a página é carregada. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- O <title> é o texto que aparece na aba do navegador e nos resultados do Google. -->
     <title>Como Ajudar - ACAPRA</title>
+    
+    <!-- 'description' é um resumo da página usado pelo Google nos resultados de busca. -->
     <meta name="description" content="Existem muitas maneiras de apoiar a ACAPRA: doe via PIX, seja voluntário, ofereça um lar temporário ou doe itens. Toda a ajuda é fundamental.">
+    
+    <!-- 'icon' (ou favicon) é o pequeno ícone que aparece ao lado do título na aba. -->
     <link rel="icon" type="image/png" href="assets/images/header/logo.png">
+    
+    <!-- 'stylesheet' é a forma padrão de linkar um arquivo CSS externo ao HTML. -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- 'preload' é uma otimização de performance.
+         Ele diz ao navegador para começar a baixar este script em segundo plano,
+         pois ele será necessário em breve. 'as="script"' informa o tipo de recurso. -->
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" as="script">
 </head>
 
 <body>
+    <!-- Este 'div' é o contêiner para a animação de partículas (tsparticles).
+         'aria-hidden="true"' é uma prática de acessibilidade que diz aos leitores
+         de tela para ignorarem este elemento, já que é puramente decorativo. -->
     <div id="tsparticles" aria-hidden="true"></div>
 
+    <!-- A tag <header> define o bloco de cabeçalho do site (logotipo, navegação, etc.). -->
     <header class="cabecalho">
+        <!-- 'container' é uma classe CSS comum usada para centralizar
+             o conteúdo e limitar sua largura em telas grandes. -->
         <div class="container cabecalho-container">
 
             <!-- Logotipo com link para a página inicial, uma prática padrão de UX. -->
             <a href="index.html" class="logotipo">
+                <!-- A tag <img> exibe uma imagem.
+                     'alt' (texto alternativo) é obrigatório para acessibilidade,
+                     descrevendo a imagem para quem não pode vê-la. -->
                 <img src="assets/images/header/logo.png" alt="Logotipo da ACAPRA" />
             </a>
 
             <!-- Navegação Principal do site.
                  'aria-label' descreve o propósito do bloco de navegação. -->
+            <!-- A tag <nav> é semântica e indica um bloco de links de navegação. -->
             <nav class="menu-navegacao" id="meuMenu" aria-label="Navegação principal">
                 <a href="index.html">Missão</a>
                 <a href="adotar.html">Adotar</a>
                 <!-- 'aria-current="page"' indica a página ativa, melhorando a acessibilidade. -->
                 <a href="adotados.html" aria-current="page">Adotados</a>
+                <!-- 'class="link-ativo"' é um seletor CSS usado para destacar visualmente a página atual. -->
                 <a href="como-ajudar.html" class="link-ativo">Ajude</a>
                 <a href="tratos-maus/tratos-maus.html">Denunciar</a>
             </nav>
 
             <!-- Links para Redes Sociais -->
             <div class="redes-sociais">
+                <!-- A tag <p> é usada para parágrafos de texto. -->
                 <p>Siga nossos passos!</p>
-                <!-- 'target="_blank"' abre em nova aba.  -->
+                <!-- 'target="_blank"' abre em nova aba.
+                     (Boa prática: Adicionar 'rel="noopener noreferrer"' para segurança). -->
                 <a href="https://www.instagram.com/acaprabrusquesc/reels/" target="_blank"  aria-label="Visite nosso Instagram">
                     <img src="assets/images/header/instagram2.png" alt="Ícone do Instagram" />
                 </a>
@@ -51,7 +84,7 @@
             <!-- Botão do Menu Mobile -->
             <div class="menu-mobile-botao">
                 <!-- Atributos de acessibilidade:
-                     'aria-controls' conecta o botão ao menu que ele controla.
+                     'aria-controls' conecta o botão ao menu que ele controla (id="meuMenu").
                      'aria-expanded' indica se o menu está aberto ou fechado (deve ser gerenciado via JS).
                      'aria-label' descreve a ação do botão. -->
                 <button id="botaoMenu" aria-controls="meuMenu" aria-expanded="false" aria-label="Abrir menu">
@@ -61,31 +94,57 @@
         </div>
     </header>
 
+    <!-- A tag <main> define o conteúdo principal e único da página.
+         É uma tag semântica importante para acessibilidade. -->
     <main class="container conteudo-principal">
+        
+        <!-- A tag <section> é usada para agrupar conteúdos relacionados tematicamente.
+             'aria-labelledby' associa esta seção ao <h1>, dando um nome
+             acessível à região (útil para navegação por "landmarks"). -->
         <section class="secao-titulo" aria-labelledby="ajuda-titulo">
+            <!-- <h1> é o título de nível mais alto e mais importante da página.
+                 Só deve haver um <h1> por página para bom SEO e acessibilidade. -->
             <h1 id="ajuda-titulo">A sua ajuda salva vidas</h1>
             <p>Somos uma organização 100% voluntária e dependemos da generosidade da comunidade para continuar o nosso trabalho.</p>
         </section>
 
+        <!-- Seção de Destaque para Doação via PIX -->
         <section class="secao-doacao-pix">
+            <!-- Divisão para o conteúdo de texto (informações) -->
             <div class="pix-info">
+                <!-- <h2> é um subtítulo, hierarquicamente abaixo do <h1>. -->
                 <h2>Faça um PIX</h2>
                 <p>A sua doação direta ajuda a custear consultas, cirurgias, medicamentos, ração e resgates. Qualquer valor faz uma enorme diferença.</p>
                 <p class="chave-pix"><strong>Chave PIX (CNPJ):</strong> 03.772.251.0001-82</p>
+                <!-- Botão (link) para contato, abrindo em nova aba. -->
                 <a href="https://wa.me/5547996736046" target="_blank" class="botao-principal">Contactar para dúvidas</a>
             </div>
+            <!-- Divisão para a imagem do QR Code -->
             <div class="pix-qr">
+                <!-- 'loading="lazy"' é uma otimização de performance.
+                     A imagem só será baixada (download) quando estiver próxima de
+                     entrar na tela do usuário, acelerando o carregamento inicial. -->
                 <img src="assets/images/ajude-e-maus-tratos/qr-code.png" alt="QR Code para doação via PIX para a ACAPRA." loading="lazy">
             </div>
         </section>
 
+        <!-- Seção para Outras Formas de Ajuda, organizada em grid -->
         <section aria-labelledby="outras-formas-titulo">
+            <!-- Título da seção, usado como âncora de acessibilidade pelo 'aria-labelledby' da <section>. -->
             <h2 id="outras-formas-titulo" class="titulo-secao">Outras formas de ajudar</h2>
+            
+            <!-- 'grid-ajuda' é o contêiner que provavelmente usa CSS Grid ou Flexbox
+                 para organizar os 'card-info' abaixo. -->
             <div class="grid-ajuda">
+                <!-- Início de um "card" de informação.
+                     Este padrão (div com h4 e p) é repetido para cada item. -->
                 <div class="card-info">
+                    <!-- <h4> é um nível de título usado dentro desta sub-seção. -->
                     <h4>Seja Voluntário(a)</h4>
                     <p>Precisamos de apoio em feiras de adoção, transporte para clínicas, visitas pós-adoção e criação de conteúdo.</p>
                 </div>
+                <!-- Fim do "card" -->
+
                 <div class="card-info">
                     <h4>Ofereça Lar Temporário</h4>
                     <p>Abra a sua casa por alguns dias até encontrarmos um lar definitivo. Nós orientamos e ajudamos com os custos.</p>
@@ -110,13 +169,20 @@
         </section>
     </main>
 
+    <!-- A tag <footer> define o rodapé da página. -->
     <footer class="rodape">
         <div class="container">
+            <!-- A tag <small> é semanticamente correta para "letras pequenas",
+                 como direitos autorais (copyright) e avisos legais. -->
             <small>&copy; 2025 ACAPRA - Todos os direitos reservados.</small>
             <p class="creditos">Feito com ❤️ por voluntários</p>
         </div>
     </footer>
 
+    <!-- O atributo 'defer' é uma otimização de performance.
+         Ele faz o script ser baixado em paralelo com o HTML,
+         mas só executa DEPOIS que o HTML foi completamente analisado (parsed).
+         Isso evita que o script bloqueie a renderização da página. -->
     <script src="script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js" defer></script>
 </body>
